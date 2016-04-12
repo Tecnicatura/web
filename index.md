@@ -44,6 +44,6 @@ Control de Procesos Industriales
 Práctica Profesional II  
 
 
-[home](http://www.donboscorosario.com.ar/carreras/tecnicaturasuperiorenelectronica.htm)
+[info carrera](http://donboscorosario.com.ar/carreras/tecnicaturasuperiorenelectronica.htm)
   	 
 
