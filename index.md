@@ -1,7 +1,7 @@
 
 #Tecnicatura Superior en Electrónica
 
-![Image](img/edificio.jpg?raw=true)
+![Image](https://raw.githubusercontent.com/Tecnicatura/web/gh-pages/img/edificio.jpg)
 
 ##Materias
 
