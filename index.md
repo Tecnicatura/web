@@ -36,5 +36,8 @@
 -Instrumentación  
 -Control de Procesos Industriales  
 -Práctica Profesional II  
+
+
+[home](http://www.donboscorosario.com.ar/carreras/tecnicaturasuperiorenelectronica.htm)
   	 
 
