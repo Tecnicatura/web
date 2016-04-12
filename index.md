@@ -5,7 +5,7 @@
 ##Materias
 
 
-####Primer Año:
+####Primer Año
 
 -Ensayos y Mediciones Eléctricas y Electrónicas  
 -Electricidad  
@@ -16,19 +16,19 @@
 -Álgebra y Geometría  
 -Ética  
 	
-####Segundo Año:
+####Segundo Año
 
 -Máquinas Eléctricas, Hidráulica y Neumática  
 -Electrotecnia  
 -Electrónica I  
 -Circuitos Digitales  
 -Control Lineal y No Lineal  
--[Informática Electrónica I]  (informatica1.md)  
+-[Informática Electrónica I]  (#!/informatica1.md)  
 -Práctica Profesional I  
 -Química  
 -Sociología del Trabajo  
  
-####Tercer Año:
+####Tercer Año
 -Robótica  
 -Electrónica II  
 -Informática Electrónica II  
