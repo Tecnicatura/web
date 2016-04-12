@@ -23,7 +23,7 @@
 -Electrónica I  
 -Circuitos Digitales  
 -Control Lineal y No Lineal  
--[Informática Electrónica I]  (informaticaI.md)
+-[Informática Electrónica I]  (informatica1.md)  
 -Práctica Profesional I  
 -Química  
 -Sociología del Trabajo  
