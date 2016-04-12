@@ -1,7 +1,7 @@
 
 #Tecnicatura Superior en Electrónica
 
-![Image of Yaktocat](https://github.com/Tecnicatura/web/blob/gh-pages/img/edificio.jpg)
+![Image](https://github.com/Tecnicatura/web/blob/gh-pages/img/edificio.jpg)
 
 ##Materias
 
