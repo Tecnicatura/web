@@ -3,11 +3,10 @@
 
 
 #Tecnicatura Superior en Electrónica
-<p align="center">
-</img>
-</p>
-![Image](https://raw.githubusercontent.com/Tecnicatura/web/gh-pages/img/edificio.jpg)
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Tecnicatura/web/gh-pages/img/edificio.jpg" />
+</p>
 
 ##Materias
 
