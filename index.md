@@ -4,10 +4,6 @@
 
 #Tecnicatura Superior en Electrónica
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Tecnicatura/web/gh-pages/img/edificio.jpg" />
-</p>
-
 ##Materias
 
 
@@ -29,7 +25,7 @@ Electrotecnia
 Electrónica I  
 Circuitos Digitales  
 Control Lineal y No Lineal  
-[Informática Electrónica I](#!/informatica1.md)  
+[Informática Electrónica I](#!http://tecnicatura.github.io/web/informatica1.md)  
 Práctica Profesional I  
 Química  
 Sociología del Trabajo  
