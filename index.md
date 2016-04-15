@@ -25,7 +25,7 @@ Electrotecnia
 Electrónica I  
 Circuitos Digitales  
 Control Lineal y No Lineal  
-[Informática Electrónica I](http://tecnicatura.github.io/web/informatica1.md/#!informatica1.md)  
+[Informática Electrónica I](http://tecnicatura.github.io/web/#!/informatica1.md)  
 Práctica Profesional I  
 Química  
 Sociología del Trabajo  
