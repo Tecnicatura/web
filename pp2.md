@@ -2,7 +2,7 @@
 
 ###Proyectos 
 
-* 2013 - Automatización Mezcladora de Colores Telecomando Android 
+* 2013 - Automatización Mezcladora de Colores Telecomando Android  
            Rueda de Bicicleta con Display Persistence Of Vision           	
 
 * 2014 - Automatización Ascensor 	
