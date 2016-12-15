@@ -37,8 +37,7 @@ Informática Electrónica II
 Automatización  
 Instrumentación  
 Control de Procesos Industriales  
-Práctica Profesional II  
-
+[Práctica Profesional II](/web/#!/pp2)  
 
 [info carrera](http://donboscorosario.com.ar/carreras/tecnicaturasuperiorenelectronica.htm)
   	 
