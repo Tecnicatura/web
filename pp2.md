@@ -4,16 +4,25 @@
 
 ## 2013 
 * Automatización Mezcladora de Colores Telecomando Android  
-* Rueda de Bicicleta con Display Persistence Of Vision           	
-
+  Martín Ruiz Díaz, Hernán Reinero
+  
+* Rueda de Bicicleta con Display Persistence Of Vision      	
+  Alejandro Villaseca 
+  
 ## 2014 
 * Automatización Ascensor 	
 
 ## 2015 
-* Automatización mezcladora de colores 
-* Inflador de Neumáticos Automático
-* Péndulo Estabilizado
+* Automatización mezcladora de colores  
+  Amilcar Gasparotti  
 
+* Inflador de Neumáticos Automático  
 
+* Péndulo Estabilizado  
+  Gaspar Albertengo
+  
 ## 2016 
 * Estación Meteorológica 
+  Andrés Cecconi, Brian Corbo, Eric Hallberg, Damián Rodríguez, Franco Zito
+
+## 2017
