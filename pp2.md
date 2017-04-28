@@ -6,11 +6,11 @@
 * Automatización Mezcladora de Colores Telecomando Android  
   Martín Ruiz Díaz, Hernán Reinero
   
-* Rueda de Bicicleta con Display Persistence Of Vision      	
+* Rueda de Bicicleta con Display Persistence Of Vision  
   Alejandro Villaseca 
   
 ## 2014 
-* Automatización Ascensor 	
+* Automatización Ascensor  
 
 ## 2015 
 * Automatización mezcladora de colores  
