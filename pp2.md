@@ -22,8 +22,8 @@
   Gaspar Albertengo
   
 ## 2016 
-* Estación Meteorológica 
-  Andrés Cecconi, Brian Corbo, Eric Hallberg, Damián Rodríguez, Franco Zito
- (img/proyectos/2016.png)[2016]
+* Estación Meteorológica  
+  Andrés Cecconi, Brian Corbo, Eric Hallberg, Damián Rodríguez, Franco Zito  
+ !(img/proyectos/2016.png)[2016]
 
 ## 2017
