@@ -25,7 +25,7 @@ Electrotecnia
 Electrónica I  
 Circuitos Digitales  
 Control Lineal y No Lineal  
-[Informática Electrónica I](/web/#!/informatica1)  
+[Informática Electrónica I](/web/materias/#!/informatica1)  
 Práctica Profesional I  
 Química  
 Sociología del Trabajo  
@@ -36,8 +36,8 @@ Electrónica II
 Informática Electrónica II  
 Automatización  
 Instrumentación  
-[Control de Procesos Industriales](/web/#!/cpi)   
-[Práctica Profesional II](/web/#!/pp2)  
+[Control de Procesos Industriales](/web/materias/#!/cpi)   
+[Práctica Profesional II](/web/materias/#!/pp2)  
 
 [info carrera](http://donboscorosario.com.ar/carreras/tecnicaturasuperiorenelectronica.htm)
   	 
