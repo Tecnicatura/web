@@ -36,7 +36,7 @@ Electrónica II
 Informática Electrónica II  
 Automatización  
 Instrumentación  
-[Control de Procesos Industriales](/web/materias/#!/cpi)   
+[Control de Procesos Industriales](/web/materias/cpi.html)   
 [Práctica Profesional II](/web/materias/#!/pp2)  
 
 [info carrera](http://donboscorosario.com.ar/carreras/tecnicaturasuperiorenelectronica.htm)
