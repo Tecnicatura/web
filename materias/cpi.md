@@ -1,0 +1,21 @@
+<html>
+<head>
+<script type="text/javascript" async  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+</head>
+<body>
+Inercia Mecánica
+$$F=m\frac{dv}{dt}$$
+$$E=\frac{1}{2}mv^2$$
+
+Inductor
+$$Vl=L\frac{di}{dt}$$
+$$El=\frac{1}{2}Li^2$$
+
+Capacitor
+$$Ic=C\frac{dv}{dt}$$
+$$Ec=\frac{1}{2}Cv^2$$
+
+
+</body>
+</html>
