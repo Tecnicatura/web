@@ -2,12 +2,12 @@
 
 
 
-#Tecnicatura Superior en Electrónica
+# Tecnicatura Superior en Electrónica
 
-##Materias
+## Materias
 
 
-####Primer Año
+#### Primer Año
 
 Ensayos y Mediciones Eléctricas y Electrónicas  
 Electricidad  
@@ -18,7 +18,7 @@ Análisis Matemático
 Álgebra y Geometría  
 Ética  
 	
-####Segundo Año
+#### Segundo Año
 
 Máquinas Eléctricas, Hidráulica y Neumática  
 Electrotecnia  
@@ -30,7 +30,7 @@ Práctica Profesional I
 Química  
 Sociología del Trabajo  
  
-####Tercer Año
+#### Tercer Año
 Robótica  
 Electrónica II  
 Informática Electrónica II  
