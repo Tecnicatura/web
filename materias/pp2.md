@@ -13,7 +13,8 @@
   Amilcar Gasparotti  
 
 ### Inflador de Neumáticos Automático  
-
+  Gustavo Panciroli
+  
 ### Péndulo Estabilizado  
   Gaspar Albertengo
   
