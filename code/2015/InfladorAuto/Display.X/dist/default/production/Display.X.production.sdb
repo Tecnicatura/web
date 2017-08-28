@@ -1,0 +1,325 @@
+[p LITE_MODE AUTOSTATIC PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 6 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"56 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"44 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"28 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwtoft.c
+[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 0 0 ]
+"24
+[v _memcpyee memcpyee `(v  1 e 0 0 ]
+"28 C:\Users\Gustavo\MPLABXProjects\Display.X\display.c
+[v _armar4Digitos armar4Digitos `(ui  1 e 2 0 ]
+"33
+[v _obtieneUnidad obtieneUnidad `(uc  1 e 1 0 ]
+"39
+[v _divide10DescartaUnidad divide10DescartaUnidad `(ui  1 e 2 0 ]
+"44
+[v _envio8bits envio8bits `(v  1 e 0 0 ]
+"76
+[v _transformaDecTo7Seg transformaDecTo7Seg `(uc  1 e 1 0 ]
+"103
+[v _sipo_send sipo_send `(v  1 e 0 0 ]
+"131
+[v _waitSetpoint waitSetpoint `(ui  1 e 2 0 ]
+"52 C:\Users\Gustavo\MPLABXProjects\Display.X\main.c
+[v _controlLoop controlLoop `(i  1 e 2 0 ]
+"58
+[v _ISR ISR `II(v  1 e 0 0 ]
+"77
+[v _actuador actuador `(ui  1 e 2 0 ]
+"107
+[v _main main `(v  1 e 0 0 ]
+"55 C:\Program Files (x86)\Microchip\xc8\v1.34\include\pic16f877a.h
+[v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
+[s S195 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"226
+[u S204 . 1 `S195 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES204  1 e 1 @6 ]
+[s S56 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"287
+[u S65 . 1 `S56 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES65  1 e 1 @7 ]
+[s S19 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"465
+[s S28 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S33 . 1 `S19 1 . 1 0 `S28 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES33  1 e 1 @11 ]
+"1118
+[v _ADRESH ADRESH `VEuc  1 e 1 @30 ]
+[s S92 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nRBPU 1 0 :1:7 
+]
+"1239
+[s S99 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+]
+[u S103 . 1 `S92 1 . 1 0 `S99 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES103  1 e 1 @129 ]
+"1337
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1398
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+"2169
+[v _ADRESL ADRESL `VEuc  1 e 1 @158 ]
+"2319
+[v _ADCS0 ADCS0 `VEb  1 e 0 @254 ]
+"2321
+[v _ADCS1 ADCS1 `VEb  1 e 0 @255 ]
+"2323
+[v _ADCS2 ADCS2 `VEb  1 e 0 @1278 ]
+"2327
+[v _ADFM ADFM `VEb  1 e 0 @1279 ]
+"2329
+[v _ADIE ADIE `VEb  1 e 0 @1126 ]
+"2331
+[v _ADIF ADIF `VEb  1 e 0 @102 ]
+"2333
+[v _ADON ADON `VEb  1 e 0 @248 ]
+"2385
+[v _CHS0 CHS0 `VEb  1 e 0 @251 ]
+"2387
+[v _CHS1 CHS1 `VEb  1 e 0 @252 ]
+"2389
+[v _CHS2 CHS2 `VEb  1 e 0 @253 ]
+"2447
+[v _GO_DONE GO_DONE `VEb  1 e 0 @250 ]
+"2475
+[v _PCFG0 PCFG0 `VEb  1 e 0 @1272 ]
+"2477
+[v _PCFG1 PCFG1 `VEb  1 e 0 @1273 ]
+"2479
+[v _PCFG2 PCFG2 `VEb  1 e 0 @1274 ]
+"2481
+[v _PCFG3 PCFG3 `VEb  1 e 0 @1275 ]
+"33 C:\Users\Gustavo\MPLABXProjects\Display.X\main.c
+[v _diferenciaPresion diferenciaPresion `i  1 e 2 0 ]
+"34
+[v _spnum spnum `ui  1 e 2 0 ]
+"35
+[v _cuentaMS cuentaMS `ui  1 e 2 0 ]
+"36
+[v _tiempoDeAccion tiempoDeAccion `ui  1 e 2 0 ]
+"37
+[v _estado estado `ui  1 e 2 0 ]
+"39
+[v _presionMedida presionMedida `ui  1 e 2 0 ]
+"40
+[v _convertToUInt convertToUInt `ui  1 e 2 0 ]
+"107
+[v _main main `(v  1 e 0 0 ]
+{
+"180
+[v main@refresh refresh `i  1 a 2 29 ]
+"140
+[v main@seg seg `ui  1 a 2 33 ]
+"139
+[v main@min min `ui  1 a 2 31 ]
+"213
+} 0
+"131 C:\Users\Gustavo\MPLABXProjects\Display.X\display.c
+[v _waitSetpoint waitSetpoint `(ui  1 e 2 0 ]
+{
+"132
+[v waitSetpoint@spnum spnum `ui  1 a 2 24 ]
+"131
+[v waitSetpoint@pedido pedido `ui  1 p 2 20 ]
+"157
+} 0
+"52 C:\Users\Gustavo\MPLABXProjects\Display.X\main.c
+[v _controlLoop controlLoop `(i  1 e 2 0 ]
+{
+"53
+[v controlLoop@error error `i  1 a 2 6 ]
+"52
+[v controlLoop@spnum spnum `ui  1 p 2 0 ]
+[v controlLoop@presionMedida0 presionMedida0 `ui  1 p 2 2 ]
+"57
+} 0
+"28 C:\Users\Gustavo\MPLABXProjects\Display.X\display.c
+[v _armar4Digitos armar4Digitos `(ui  1 e 2 0 ]
+{
+[v armar4Digitos@mil mil `ui  1 p 2 6 ]
+[v armar4Digitos@cen cen `ui  1 p 2 8 ]
+"31
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"77 C:\Users\Gustavo\MPLABXProjects\Display.X\main.c
+[v _actuador actuador `(ui  1 e 2 0 ]
+{
+[v actuador@accion accion `i  1 p 2 20 ]
+"100
+} 0
+"103 C:\Users\Gustavo\MPLABXProjects\Display.X\display.c
+[v _sipo_send sipo_send `(v  1 e 0 0 ]
+{
+"111
+[v sipo_send@i i `ui  1 a 2 18 ]
+"104
+[v sipo_send@unidad unidad `uc  1 a 1 17 ]
+"103
+[v sipo_send@sendNro sendNro `ui  1 p 2 10 ]
+[v sipo_send@digitos digitos `ui  1 p 2 12 ]
+[v sipo_send@display display `ui  1 p 2 14 ]
+"129
+} 0
+"76
+[v _transformaDecTo7Seg transformaDecTo7Seg `(uc  1 e 1 0 ]
+{
+[v transformaDecTo7Seg@nro nro `uc  1 a 1 wreg ]
+[v transformaDecTo7Seg@nro nro `uc  1 a 1 wreg ]
+[v transformaDecTo7Seg@nro nro `uc  1 a 1 34 ]
+"101
+} 0
+"33
+[v _obtieneUnidad obtieneUnidad `(uc  1 e 1 0 ]
+{
+"34
+[v obtieneUnidad@digito digito `uc  1 a 1 8 ]
+"33
+[v obtieneUnidad@sendNro sendNro `ui  1 p 2 5 ]
+"37
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwmod@counter counter `uc  1 a 1 4 ]
+"6
+[v ___lwmod@divisor divisor `ui  1 p 2 0 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 2 ]
+"26
+} 0
+"44 C:\Users\Gustavo\MPLABXProjects\Display.X\display.c
+[v _envio8bits envio8bits `(v  1 e 0 0 ]
+{
+[v envio8bits@x x `uc  1 a 1 wreg ]
+"45
+[v envio8bits@i i `uc  1 a 1 5 ]
+"44
+[v envio8bits@x x `uc  1 a 1 wreg ]
+[v envio8bits@display display `i  1 p 2 0 ]
+"46
+[v envio8bits@x x `uc  1 a 1 4 ]
+"72
+} 0
+"39
+[v _divide10DescartaUnidad divide10DescartaUnidad `(ui  1 e 2 0 ]
+{
+[v divide10DescartaUnidad@sendNro sendNro `ui  1 p 2 7 ]
+"42
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwdiv@quotient quotient `ui  1 a 2 5 ]
+"12
+[v ___lwdiv@counter counter `uc  1 a 1 4 ]
+"6
+[v ___lwdiv@divisor divisor `ui  1 p 2 0 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 2 ]
+"31
+} 0
+"58 C:\Users\Gustavo\MPLABXProjects\Display.X\main.c
+[v _ISR ISR `II(v  1 e 0 0 ]
+{
+"74
+} 0
+"28 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwtoft.c
+[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
+{
+[v ___lwtoft@c c `ui  1 p 2 8 ]
+"31
+} 0
+"44 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+{
+"47
+[v ___fttol@lval lval `ul  1 a 4 25 ]
+"46
+[v ___fttol@exp1 exp1 `uc  1 a 1 29 ]
+[v ___fttol@sign1 sign1 `uc  1 a 1 24 ]
+"44
+[v ___fttol@f1 f1 `f  1 p 3 16 ]
+"73
+} 0
+"56 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+{
+"60
+[v ___ftdiv@f3 f3 `f  1 a 3 11 ]
+"59
+[v ___ftdiv@sign sign `uc  1 a 1 15 ]
+[v ___ftdiv@exp exp `uc  1 a 1 14 ]
+[v ___ftdiv@cntr cntr `uc  1 a 1 10 ]
+"56
+[v ___ftdiv@f2 f2 `f  1 p 3 0 ]
+[v ___ftdiv@f1 f1 `f  1 p 3 3 ]
+"86
+} 0
+"62 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+{
+[v ___ftpack@arg arg `um  1 p 3 0 ]
+[v ___ftpack@exp exp `uc  1 p 1 3 ]
+[v ___ftpack@sign sign `uc  1 p 1 4 ]
+"86
+} 0
