@@ -24,6 +24,7 @@
 
 ## 2014 
 ### Automatización Ascensor  
+Leandro Almiron, Julian Barbona, Alejandro Cárpena, Nahuel Monfrini, Agustin Monti, Nicolás Puppo.
 
 ---  
 
