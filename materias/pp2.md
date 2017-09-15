@@ -1,6 +1,7 @@
 # Proyectos 
 
-## 2017
+## 2017  
+
 ---
 ## 2016 
 ### [Estación Meteorológica](/web/#!/materias/proyectos/2016/estacion)
@@ -15,10 +16,10 @@
   
 ### Péndulo Estabilizado  
   Gaspar Albertengo
----
+---  
 ## 2014 
 ### Automatización Ascensor  
----
+---  
 ## 2013 
 ### Automatización Mezcladora de Colores Telecomando Android  
   Martín Ruiz Díaz, Hernán Reinero
