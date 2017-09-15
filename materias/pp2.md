@@ -3,7 +3,7 @@
 ## 2017
 
 ## 2016 
-### [Estación Meteorológica](/web/#!/materias/proyectos/2016/estacion.md)
+### [Estación Meteorológica](/web/#!/materias/proyectos/2016/estacion)
   Andrés Cecconi, Brian Corbo, Eric Hallberg, Damián Rodríguez, Franco Zito  
   
 ## 2015 
