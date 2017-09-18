@@ -1,6 +1,6 @@
 # Presentación
 
-* [Componentes en una PC](/web/materias/infobasica/index.html)   
+[Componentes en una PC](/web/materias/infobasica/index.html)   
 
 
 # Prácticas
