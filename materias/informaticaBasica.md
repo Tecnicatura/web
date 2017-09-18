@@ -1,6 +1,6 @@
 # Presentación
 
-### [Componentes de hardware en una PC](/web/materias/infobasica/index.html)   
+### [Componentes de hardware en una PC](/web/materias/infobasica/hard/index.html)   
 
 
 # Prácticas
