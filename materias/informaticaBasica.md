@@ -1,3 +1,10 @@
+# Presentación
+
+* [Componentes en una PC](/web/materias/infobasica/index.html)   
+
+
+# Prácticas
+
 
 ## Cuestionario autoevaluación 1
 
