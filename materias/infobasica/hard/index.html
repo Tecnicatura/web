@@ -2,7 +2,7 @@
 <html lang="es">
     <head>	
         <meta charset="utf-8"/>
-	<meta name="viewport" content="width=device-width, user-scalable=yes" />
+	<!--meta name="viewport" content="width=device-width, user-scalable=yes" /-->
         <link rel="stylesheet" href="css/reveal.css">
         <link rel="stylesheet" href="css/theme/beige.css">
 
@@ -360,7 +360,10 @@
         <!--script src="js/plugin/highlight.js"></script-->
         <script>
             //hljs.initHighlightingOnLoad();
-            Reveal.initialize();
+            Reveal.initialize({
+			margin: 0,
+			minScale: 1,
+			maxScale: 1});
 
             function loadLinks(){
             	    var ul=document.createElement('ul');
