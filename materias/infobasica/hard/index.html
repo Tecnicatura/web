@@ -6,73 +6,10 @@
         <link rel="stylesheet" href="css/reveal.css">
         <link rel="stylesheet" href="css/theme/beige.css">
 
-        <!--
-        Componentes
-        bios y pila
-        
-        
-        cpu microprocesador
-        
-        
-        chipset: northbridge, southbridge
-        
-        
-        cooler
-        
-        
-        cooler in mother
-                
-        hd
-        
-                
-        
-        Conectores internos
-        
-        
-        floppy
-        ?
-        
-        ide vs sata
-        
-        
-        ram 
-        
-        
-        atx 24 pines
-        
-        
-        cpu fan
-        
-        
-        cpu socket
-                
-       
-        
-        jumpers
-                
-        
-        pci, pci express
-        
-        
-        ps/2
-                
-        
-        usb
-        
-        
-        
-
-        
-        
-        
-        Periféricos
-        
-        
-        -->
         <style type="text/css">
         img{
                 width:65%;
-        }
+         }
         </style>
     </head>
     <body>
@@ -363,20 +300,23 @@
                     document.getElementById("imgSrc").appendChild(ul)
                     
                  	for(var i=0;i<document.getElementsByTagName('img').length;i++){
-                 		var li=document.createElement('li');
-                 		
-						var a = document.createElement('a');
-						var linkText = document.createTextNode((i+1)+' '+document.getElementsByTagName('img')[i].title);
-						a.appendChild(linkText);
-						a.title = document.getElementsByTagName('img')[i].title;
-						a.href = document.getElementsByTagName('img')[i].title;
-						li.appendChild(a);
-
-						ul.appendChild(li);                 		
+                 		var li=document.createElement('li');                 		
+				var a = document.createElement('a');
+				var linkText = document.createTextNode((i+1)+' '+document.getElementsByTagName('img')[i].title);
+				a.appendChild(linkText);
+				a.title = document.getElementsByTagName('img')[i].title;
+				a.href = document.getElementsByTagName('img')[i].title;
+				li.appendChild(a);
+				ul.appendChild(li);                 		
                  	}                 	
              };
              loadLinks();
-
+		
+		document.querySelector( 'body' ).addEventListener( 'click', function( event ) {
+			event.preventDefault();
+			zoom.to({ element: event.target });
+		} );
+		
         </script>
     </body>
 </html>
