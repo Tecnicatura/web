@@ -1,4 +1,4 @@
-<style> img[alt=drawing] { width: 600px; }</style>
+<style> img{ width: 600px; }</style>
 
 ![2015_1](materias/proyectos/2015/inflador1.jpg)  
  ![2015_2](materias/proyectos/2015/inflador2.jpg)  
