@@ -6,5 +6,4 @@
  ![2015](materias/proyectos/2015/inflador6.png)  
  ![2015](materias/proyectos/2015/inflador7.png)  
  ![2015](materias/proyectos/2015/inflador8.png)  
- ![2015](materias/proyectos/2015/inflador9.png)  
- ![2015](materias/proyectos/2015/inflador10.png)  
+ 
