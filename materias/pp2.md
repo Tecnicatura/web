@@ -14,7 +14,7 @@
 ### Automatización mezcladora de colores  
   Amilcar Gasparotti  
 
-### [Inflador de Neumáticos Automático](/web/#!/materias/proyectos/2015/inflador)
+### [Inflador de Neumáticos Automático](/web/#!/materias/proyectos/2015/infladorAuto)
   Gustavo Panciroli
   
 ### Péndulo Estabilizado  
