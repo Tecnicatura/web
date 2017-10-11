@@ -1,7 +1,7 @@
 # Presentación
 
 ### [Componentes de hardware en una PC](/web/materias/infobasica/hard/index.html)   
-### [Componentes de hardware en una PC](/web/materias/infobasica/formato/index.html)   
+### [Formato de Datos](/web/materias/infobasica/formato/index.html)   
 
 
 # Prácticas
