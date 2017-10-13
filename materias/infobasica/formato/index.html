@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>	
+        <meta charset="utf-8"/>
+	<!--meta name="viewport" content="width=device-width, user-scalable=yes" /-->
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/beige.css">
+
+        <style type="text/css">
+        img{
+                width:65%;
+         }
+        </style>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">			    
+                <section><h3>Formato de archivo</h3>
+                </section>                                                  
+                
+                <section>
+                    <h3>Formato de archivos</h3>
+                    <ul>                
+                        <li>Texto Plano: contiene bytes solo de caracteres legibles</li>                    
+                            Textos, Archivos de Configuración, Comunicaciones, ...                            
+                        <li>Binario: contiene bytes en todo el rango</li>
+                            Imagen, Ejecutable, Audio, Sistema, Video, Comunicación gran cantidad de datos,etc..
+                    </ul>
+                </section>				
+
+                
+                <section>
+                    <h3>Ejemplos de Formatos para datos</h3>
+                    <ul>                
+                        <li>JSON</li>                                                
+                        <li>CSV</li>
+                        <li>XML/HTML</li>                            
+                    </ul>
+                </section>              
+         
+                <section>
+                    <h3>JSON</h3>
+                    {"nombre":"Juan",
+                     "apellido":"Perez",
+                     "direccion":"Roca 150"}
+                </section>     
+                <section>
+                    <h3>JSON array</h3>
+                    {[ {"nombre":"Juan",
+                       "apellido":"Perez",
+                       "direccion":"Roca 150"},
+
+                       {"nombre":"Pedro",
+                       "apellido":"Rodriguez",
+                       "direccion":"Alvear 200"}]}
+                </section> 
+                <section>
+                   <h3>JSON anidado</h3>
+                    {"Cliente":{"nombre":"Juan",
+                                "apellido":"Perez",
+                                "direccion":"Roca 150"}}
+                </section>     
+                <section>
+                    <h3>CSV</h3>
+                    nombre;apellido;direccion
+                    Juan;Perez;Roca 150
+                    Pedro;Rodriguez;Alvear 200
+                </section>     
+                 <section>
+                    <h3>HTML</h3>
+                    &lt;HTML&gt;
+                        &lt;DIV&gt;
+                        &lt;/DIV&gt;
+                    &lt;/HTML&gt;
+                </section>     
+
+                   
+				<section>    
+                Imagenes <span id="cantImg"> </span> .
+                <script>document.getElementById("cantImg").innerHTML = document.getElementsByTagName('img').length;</script>
+				</section>    
+				
+				<section id="imgSrc" style="font-size: 10px !important">    
+                 <b>Imágenes extraídas de buscador. Fuente en orden de aparición</b><br>                                
+				</section>    				
+            </div>
+        </div>
+        <script src="js/reveal.js"></script>
+	<script src="js/zoom.js"></script>
+        <!--script src="js/plugin/highlight.js"></script-->
+        <script>
+            //hljs.initHighlightingOnLoad();
+            Reveal.initialize({margin: 0});
+
+            function loadLinks(){
+            	    var ul=document.createElement('ul');
+                    document.getElementById("imgSrc").appendChild(ul)
+                    
+                 	for(var i=0;i<document.getElementsByTagName('img').length;i++){
+                 		var li=document.createElement('li');                 		
+				var a = document.createElement('a');
+				var linkText = document.createTextNode((i+1)+' '+document.getElementsByTagName('img')[i].title);
+				a.appendChild(linkText);
+				a.title = document.getElementsByTagName('img')[i].title;
+				a.href = document.getElementsByTagName('img')[i].title;
+				li.appendChild(a);
+				ul.appendChild(li);                 		
+                 	}                 	
+             };
+             loadLinks();
+		
+		document.querySelectorAll( 'img' ).addEventListener( 'click', function( event ) {
+			event.preventDefault();
+			zoom.to({ element: event.target });
+		} );
+		
+        </script>
+    </body>
+</html>
