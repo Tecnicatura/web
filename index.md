@@ -18,7 +18,7 @@
 * Máquinas Eléctricas, Hidráulica y Neumática  
 * Electrotecnia  
 * Electrónica I  
-* Circuitos Digitales  
+* [Circuitos Digitales](/web/#!/materias/circuitosdigitales)  
 * Control Lineal y No Lineal  
 * [Informática Electrónica I](/web/#!/materias/informaticaEca1)  
 * Práctica Profesional I  
