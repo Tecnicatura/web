@@ -19,9 +19,9 @@
 [Datasheet VS-GP250SA60S](/web/materias/ecapotencia/IGBT/vs-gp250sa60s.pdf)  
 [Datasheet IRGS4640DPbF](/web/materias/ecapotencia/IGBT/vs-gp250sa60s.pdf)  
 
-[SCR](/web/materias/ecapotencia/Silicon+Controlled+Rectifiers/SCR.pptx)
-[SCR TN1215-1000B_to_TYN812T](/web/materias/ecapotencia/SiliconControlled+Rectifiers/SCR TN1215-1000B_to_TYN812T.pdf)
-[catálogo scr](/web/materias/ecapotencia/SiliconControlled+Rectifiers/catalogo scr.pdf)
+[SCR](/web/materias/ecapotencia/Silicon+Controlled+Rectifiers/SCR.pptx)  
+[SCR TN1215-1000B_to_TYN812T](/web/materias/ecapotencia/Silicon+Controlled+Rectifiers/SCR+TN1215-1000B_to_TYN812T.pdf)  
+[catálogo scr](/web/materias/ecapotencia/Silicon+Controlled+Rectifiers/catalogo+scr.pdf)  
 
 [Optoacopladores y relés de estado sólido](/web/materias/ecapotencia/Optoacopladores+y+relés+de+estado+sólido/Optoacopl+y+SSR.pptx)
 [Datasheet 4N26](/web/materias/ecapotencia/Optoacopladores+y+relés+de+estado+sólido/4N26.pdf)
