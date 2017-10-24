@@ -5,34 +5,34 @@
 ## Asignaturas
 
 ### Primer Año
-* Ensayos y Mediciones Eléctricas y Electrónicas  
+* Ens. y Med. E y Eca.
 * Electricidad  
-* Teoría de Control  
-* [Informática Básica](/web/#!/materias/informaticaBasica)  
+* T. de Ctrl
+* [Info. Básica](/web/#!/materias/informaticaBasica)  
 * Mecánica  
 * Análisis Matemático  
 * Álgebra y Geometría  
 * Ética  
 	
 ### Segundo Año
-* Máquinas Eléctricas, Hidráulica y Neumática  
+* Máq. Eléct, H y N
 * Electrotecnia  
-* Electrónica I  
-* [Circuitos Digitales](/web/#!/materias/circuitosdigitales)  
-* Control Lineal y No Lineal  
-* [Informática Electrónica I](/web/#!/materias/informaticaEca1)  
-* Práctica Profesional I  
+* Eca I  
+* [Circ. Digitales](/web/#!/materias/circuitosdigitales)  
+* Conttrol L y N-L. 
+* [Infor. Eca I](/web/#!/materias/informaticaEca1)  
+* PP I
 * Química  
-* Sociología del Trabajo  
+* Soc. del Trabajo  
  
 ### Tercer Año
 * Robótica  
-* Electrónica II  
-* Informática Electrónica II  
+* [Eca II](/web/#!/materias/ecapotencia)  
+* Infor. Eca II  
 * Automatización  
 * Instrumentación  
-* [Control de Procesos Industriales](/web/materias/cpi.html)   
-* [Práctica Profesional II](/web/#!/materias/pp2)  
+* [Ctrl Proc. Ind.](/web/materias/cpi.html)   
+* [PP II](/web/#!/materias/pp2)  
 
 
 [Más información](http://donboscorosario.com.ar/carreras/tecnicaturasuperiorenelectronica.htm)
