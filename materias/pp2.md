@@ -1,5 +1,11 @@
 # Proyectos 
 
+## 2018
+### Automatización Ascensor con comando de audio
+  Agustín Bonvechi, Gonzalo Obregón, Ignacio Quiroga.
+
+  
+--- 
 ## 2017  
   
 ---  
@@ -29,7 +35,7 @@ Leandro Almiron, Julian Barbona, Alejandro Cárpena, Nahuel Monfrini, Agustin Mo
 ---  
 
 ## 2013 
-### Automatización Mezcladora de Colores Telecomando Android  
+### Automatización Mezcladora de Colores. Telecomando Android.
   Martín Ruiz Díaz, Hernán Reinero
   
 ### Rueda de Bicicleta con Display Persistence Of Vision  
