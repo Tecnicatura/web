@@ -1,7 +1,7 @@
 # Proyectos 
 
 ## 2018
-### Automatización Ascensor con comando de audio
+### Automatización Ascensor con comando por voz
   Agustín Bonvechi, Gonzalo Obregón, Ignacio Quiroga.
 
   
