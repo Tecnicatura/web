@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Balanceador de Pendulo</title>
+  <script src="/js/smoothie.min.js"></script>
+  <script src="/js/socket.io.js"></script>
+  <script src="/js/escaladoSensores.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/gserial.css" />
+</head>
+
+<body onload='enviar("r");pedirPresets()'>
+  <div class="contenedor">
+
+    <div id="menu" class="tabs">
+      <input class="input" name="tabs" type="checkbox" id="tab-1" checked="checked"/>
+      <label class="label" for="tab-1">Presets</label>
+      <div id="Presets" class="panel" style="background:#F8E6E0">
+        <select id="PresetsSelect" oninput="cargarPreset(this.value)" onchange="cargarPreset(this.value)">
+      </select>
+        <input id="nombrePreset" type="text" style="display:none">
+        <textarea id="descripcionPreset"></textarea>
+
+        <input id="btnNuevoPreset" type="button" onclick="nuevoPreset();" value="Nuevo">
+        <input id="btnGuardarPreset" style="display:none;" type="button" onclick="guardarPresets();" value="Guardar">
+        <input type="button" onclick="borrarPreset()" value="Borrar">
+      </div>
+        <input class="input" name="tabs" type="checkbox" id="tab-2"/>
+        <label class="label" for="tab-2">Configuracion PID</label>
+        <div class="panel" id="ConstantesPID" style="background:#F8E6E0;margin-top:15px;">
+
+          <table id="tabla">
+            <tr>
+              <td>Kp</td>
+              <td id="kpvalue">?</td>
+              <td class="slidecontainer"><input id="kp" class="slider" type="range" min="0" max="6000" name="kp" value="1000" onClick='enviar("kp");' oninput="a=document.getElementById(this.id+'value');a.innerHTML=this.value;a.style.color='#0000EE'" ></td>
+            </tr>
+            <tr>
+              <td>Ki</td>
+              <td id="kivalue">?</td>
+              <td class="slidecontainer"><input id="ki" class="slider" type="range" min="0" max="200" name="ki" onClick='enviar("ki");' oninput="a=document.getElementById(this.id+'value');a.innerHTML=this.value;a.style.color='#0000EE'"></td>
+            </tr>
+            <tr>
+              <td>Kd</td>
+              <td id="kdvalue">?</td>
+              <td class="slidecontainer"><input id="kd" class="slider" type="range" min="0" max="20000" name="kd" onClick='enviar("kd");' oninput="a=document.getElementById(this.id+'value');a.innerHTML=this.value;a.style.color='#0000EE'"></td>
+            </tr>
+            <tr>
+              <td>Kp2</td>
+              <td id="kp2value">?</td>
+              <td><input id="kp2" class="slider" type="range" min="0" max="10" name="kp2" onClick='enviar("kp2");' oninput="a=document.getElementById(this.id+'value');a.innerHTML=this.value;a.style.color='#0000EE'"></td>
+            </tr>
+            <tr>
+              <td>Ki2</td>
+              <td id="ki2value">?</td>
+              <td><input id="ki2" class="slider" type="range" min="0" max="6" name="ki2" onClick='enviar("ki2");' oninput="a=document.getElementById(this.id+'value');a.innerHTML=this.value;a.style.color='#0000EE'"></td>
+            </tr>
+            <tr>
+              <td>Kd2</td>
+              <td id="kd2value">?</td>
+              <td><input id="kd2" class="slider" type="range" min="0" max="6" name="kd2" onClick='enviar("kd2");' oninput="a=document.getElementById(this.id+'value');a.innerHTML=this.value;a.style.color='#0000EE'"></td>
+            </tr>
+          </table>
+        </div>
+        <input class="input" name="tabs" type="checkbox" id="tab-3"/>
+        <label class="label" for="tab-3">Limites</label>
+        <div class="panel" id="LimitesDuty" style="background:#E6F8E0;margin-top:15px;">
+          <table>
+            <tr>
+              <td>dutyPWMmin [0,1023] </td>
+              <td><input id="dm" type="text" name="dutyPWMmin" onkeyup="verificarCampo(event,this);"></td>
+            </tr>
+            <tr>
+              <td>dutyPWMLimit [0,1023] </td>
+              <td><input id="dl" type="text" name="dutyPWMlimit" onkeyup="verificarCampo(event,this);"></td>
+            </tr>
+            <tr>
+              <td>dutyPWMTimeout [int] </td>
+              <td><input id="dt" type="text" name="dutyPWMtimeout" onkeyup="verificarCampo(event,this);"></td>
+            </tr>
+          </table>
+        </div>
+        <input class="input" name="tabs" type="checkbox" id="tab-4"/>
+        <label class="label" for="tab-4">Escalon</label>
+        <div class="panel" id="Escalon" style="background:#E0ECF8;margin-top:15px;">
+          <table>
+            <tr>
+              <td rowspan="3">Direccion Step </td>
+              <td><label class="markcontainer"><input id="ds1check" type="radio" name="dirstep" onClick='enviar("ds1");'><span id="ds1" class="radiomark"></span>Izquierda</td></tr>
+                <tr>                                    <td><label class="markcontainer"><input id="ds0check" type="radio" name="dirstep" onClick='enviar("ds0");'><span id="ds0" class="radiomark"></span>Anulado  </td></tr>
+                <tr>                                    <td><label class="markcontainer"><input id="ds2check" type="radio" name="dirstep" onClick='enviar("ds2");'><span id="ds2" class="radiomark"></span>Derecha  </td></tr>
+                <tr><td>PotenciaStep [1,1023] </td><td><input id="ps" type="text" name="potenciastep" onkeyup="verificarCampo(event,this);"></td></tr>
+                <tr><td>Step [ciclos] </td><td><input id="s" type="text" name="step"></td></tr>
+                <tr><td colspan="2"><input id="btnstep" type='button' onClick='enviar("s");' value="Disparar Escalon"></td></tr>
+            </table>
+          </div>
+          <input class="input" name="tabs" type="checkbox" id="tab-5"/>
+          <label class="label" for="tab-5">Control</label>
+          <div class="panel" id="Control" style="background:#F8E0F7;margin-top:15px;">
+            <table>
+              <tr>
+                <td>Control On </td>
+                <td><label class="markcontainer"><input id="cOncheck" type="checkbox" onClick='enviar("cOn");'><span id="cOn" class="checkmark"></span></td></tr>
+              <tr><td colspan="2"><input type='button' onClick='enviar("z");' value="Set point = Posicion actual"></td></tr>
+              <tr><td colspan="2"><input type='button' onClick='enviar("r");' value="Actualizar estado"></td></tr>
+            </table>
+            <div id='liveVars'></div>
+        </div>
+      </div>
+        <div class="graficas" id="graficasDiv">
+        </div>
+      </div>
+    </body>
+    <script src="/js/graficos.js"></script>
+</html>

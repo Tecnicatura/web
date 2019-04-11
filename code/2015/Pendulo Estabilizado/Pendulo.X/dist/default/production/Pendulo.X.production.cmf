@@ -1,0 +1,1496 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$/tmp/cgta3wWMl.obj
+end_init CODE 0 2DA 2DA 4 1
+reset_vec CODE 0 0 0 4 1
+idloc IDLOC 0 200000 200000 8 1
+config CONFIG 0 300000 300000 E 1
+$dist/default/production/Pendulo.X.production.obj
+intcodelo CODE 0 18 18 2C2 1
+smallconst SMALLCONST 0 800 800 70 1
+text46 CODE 0 2EA4 2EA4 A 1
+text45 CODE 0 2E36 2E36 18 1
+text44 CODE 0 2DE2 2DE2 1E 1
+text43 CODE 0 2EBE 2EBE 4 1
+text42 CODE 0 2E4E 2E4E 14 1
+text41 CODE 0 2E74 2E74 12 1
+text40 CODE 0 2D64 2D64 32 1
+text39 CODE 0 2C0E 2C0E 40 1
+text37 CODE 0 2918 2918 80 1
+text36 CODE 0 2CC8 2CC8 36 1
+text35 CODE 0 2E00 2E00 1C 1
+text34 CODE 0 2EBA 2EBA 4 1
+text33 CODE 0 2E1C 2E1C 1A 1
+text32 CODE 0 26E4 26E4 9C 1
+text31 CODE 0 22E2 22E2 10A 1
+text30 CODE 0 150A 150A 2F0 1
+text29 CODE 0 2B1E 2B1E 58 1
+text28 CODE 0 1C3E 1C3E 1AC 1
+text27 CODE 0 1A26 1A26 218 1
+text26 CODE 0 2BC6 2BC6 48 1
+text25 CODE 0 2DC0 2DC0 22 1
+text24 CODE 0 2E86 2E86 10 1
+text23 CODE 0 2C8C 2C8C 3C 1
+text22 CODE 0 2898 2898 80 1
+text21 CODE 0 2D96 2D96 2A 1
+text20 CODE 0 2A64 2A64 60 1
+text19 CODE 0 24C6 24C6 D6 1
+text18 CODE 0 1F50 1F50 150 1
+text17 CODE 0 2998 2998 6A 1
+text16 CODE 0 259C 259C AA 1
+text15 CODE 0 280E 280E 8A 1
+text14 CODE 0 23EC 23EC DA 1
+text13 CODE 0 2B76 2B76 50 1
+text12 CODE 0 870 870 7C6 1
+text11 CODE 0 2D32 2D32 32 1
+text10 CODE 0 2C4E 2C4E 3E 1
+text9 CODE 0 1DEA 1DEA 166 1
+text8 CODE 0 2A02 2A02 62 1
+text7 CODE 0 21C8 21C8 11A 1
+text6 CODE 0 2E96 2E96 E 1
+text5 CODE 0 2646 2646 9E 1
+text4 CODE 0 1036 1036 4D4 1
+text3 CODE 0 2AC4 2AC4 5A 1
+text2 CODE 0 2CFE 2CFE 34 1
+text1 CODE 0 20A0 20A0 128 1
+text0 CODE 0 17FA 17FA 22C 1
+cstackCOMRAM COMRAM 1 1 1 20 1
+cstackBANK0 BANK0 1 60 60 50 1
+cstackBANK1 BANK1 1 100 100 3D 1
+dataBANK1 BANK1 1 153 153 4 1
+bssBANK1 BANK1 1 13D 13D 16 1
+dataBANK0 BANK0 1 E1 E1 12 1
+bssBANK0 BANK0 1 B0 B0 31 1
+dataCOMRAM COMRAM 1 39 39 8 1
+bssCOMRAM COMRAM 1 21 21 18 1
+cinit CODE 0 2780 2780 8E 1
+idataBANK1 CODE 0 2EB6 2EB6 4 1
+idataBANK0 CODE 0 2E62 2E62 12 1
+idataCOMRAM CODE 0 2EAE 2EAE 8 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+BANK0 0000F3-0000FF 1
+BANK1 000157-0001FF 1
+BANK2 000200-0002FF 1
+BANK3 000300-0003FF 1
+BANK4 000400-0004FF 1
+BANK5 000500-0005FF 1
+BANK6 000600-0006FF 1
+BANK7 000700-0007FF 1
+BIGRAM 000041-00005F 1
+BIGRAM 0000F3-0000FF 1
+BIGRAM 000157-0007FF 1
+CODE 000004-000017 1
+CODE 0002DE-0007FF 1
+CODE 002EC2-007FFF 1
+COMRAM 000041-00005F 1
+CONST 000004-000017 1
+CONST 0002DE-0007FF 1
+CONST 002EC2-007FFF 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 002EC2-007FFF 1
+RAM 0000F3-0000FF 1
+RAM 000157-0007FF 1
+SFR 000F60-000FFF 1
+SMALLCONST 002EC2-007FFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <file name>:<line number> <address> <psect name> <class name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production/Pendulo.X.production.obj
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":363 5C intcodelo CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":365 6C intcodelo CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":368 6E intcodelo CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":370 88 intcodelo CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":372 90 intcodelo CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":373 92 intcodelo CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":374 A6 intcodelo CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":375 F2 intcodelo CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":376 F6 intcodelo CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":378 152 intcodelo CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":379 162 intcodelo CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":380 1CC intcodelo CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":381 1D2 intcodelo CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":382 1DC intcodelo CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":391 1DE intcodelo CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":393 1E6 intcodelo CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":395 1E8 intcodelo CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":396 1EE intcodelo CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":397 1FA intcodelo CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":399 206 intcodelo CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":400 216 intcodelo CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":401 232 intcodelo CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":402 238 intcodelo CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":403 254 intcodelo CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":404 256 intcodelo CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":405 25C intcodelo CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":408 260 intcodelo CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":409 268 intcodelo CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":411 26A intcodelo CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":412 272 intcodelo CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":414 274 intcodelo CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":415 27C intcodelo CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":417 27E intcodelo CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":418 286 intcodelo CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":420 288 intcodelo CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":421 290 intcodelo CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":423 294 intcodelo CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":52 870 text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":53 8AA text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":54 8BA text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":56 8CC text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":57 8DE text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":58 90A text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":60 920 text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":61 932 text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":62 944 text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":63 970 text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":65 986 text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":67 998 text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":68 9AA text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":69 9DE text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":71 9F4 text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":73 A06 text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":74 A18 text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":75 A4C text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":83 A62 text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":85 A6E text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":87 A80 text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":88 A92 text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":89 AC4 text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":90 ADA text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":92 AEC text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":95 AFC text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":96 B0E text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":97 B42 text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":99 B58 text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":101 B6A text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":102 B7C text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":103 BB0 text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":105 BC6 text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":107 BD8 text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":108 BEA text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":109 C1E text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":111 C34 text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":113 C46 text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":114 C58 text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":115 C8C text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":117 CA2 text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":119 CB4 text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":120 CC6 text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":121 CFA text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":123 D10 text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":125 D22 text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":126 D34 text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":127 D68 text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":129 D7E text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":131 D90 text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":132 DA2 text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":133 DD4 text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":135 DEA text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":137 DFC text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":138 E0E text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":139 E42 text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":141 E58 text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":143 E6A text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":144 E7C text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":145 EB0 text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":147 EC6 text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":149 ED8 text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":150 EEA text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":151 F1E text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":153 F34 text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":155 F46 text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":156 F58 text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":157 F8C text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":159 FA2 text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":161 FB4 text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":162 FC6 text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":163 FFA text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":167 1010 text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":168 1022 text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":169 1034 text12 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":133 1036 text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":136 1046 text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":137 1056 text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":139 105A text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":140 10A0 text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":141 10A6 text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":142 10B2 text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":143 10D0 text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":144 10FE text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":145 1100 text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":144 111C text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":149 112C text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":150 1152 text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":152 1154 text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":153 117A text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":155 117C text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":156 11A2 text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":158 11A4 text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":159 11CA text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":161 11CC text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":162 11F2 text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":164 11F4 text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":165 121A text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":167 121C text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":168 122C text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":170 122E text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":171 1230 text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":172 1252 text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":173 1256 text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":177 1286 text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":178 12A8 text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":180 12AA text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":181 12D0 text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":183 12D2 text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":184 12F8 text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":186 12FA text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":187 12FC text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":188 131A text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":189 131E text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":190 132E text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":191 133A text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":192 133E text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":196 1358 text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":197 137E text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":199 1380 text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":200 13A6 text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":202 13A8 text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":203 13CE text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":205 13D0 text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":206 13F2 text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":208 13F4 text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":209 13F6 text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":210 1406 text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":211 142C text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":212 1446 text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":213 144E text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":215 1452 text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":217 146C text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":218 1498 text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":219 149A text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":147 149C text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":223 1508 text4 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyControl.c":25 150A text30 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyControl.c":26 1524 text30 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyControl.c":29 153E text30 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyControl.c":31 15A4 text30 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyControl.c":32 15F8 text30 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyControl.c":33 1614 text30 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyControl.c":34 1616 text30 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyControl.c":40 16A6 text30 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyControl.c":42 17C8 text30 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyControl.c":44 17E8 text30 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyControl.c":45 17F8 text30 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":233 17FA text0 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":235 17FC text0 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":237 17FE text0 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":239 1800 text0 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":243 1802 text0 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":244 1804 text0 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":245 1806 text0 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":246 1808 text0 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":249 180A text0 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":251 181E text0 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":252 1820 text0 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":253 1822 text0 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":254 1824 text0 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":255 1826 text0 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":256 1828 text0 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":257 182A text0 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":258 182C text0 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":259 182E text0 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":262 1830 text0 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":263 1832 text0 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":266 1834 text0 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":268 1838 text0 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":270 183C text0 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":272 1840 text0 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":275 1844 text0 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":276 1846 text0 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":277 1848 text0 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":278 184A text0 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":279 184C text0 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":281 184E text0 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":284 185E text0 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":285 1868 text0 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":289 1870 text0 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":290 18F8 text0 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":293 1900 text0 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":297 190A text0 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":299 1A02 text0 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":300 1A0C text0 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":301 1A1C text0 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":302 1A20 text0 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyControl.c":62 1A26 text27 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyControl.c":68 1A64 text27 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyControl.c":76 1AE4 text27 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyControl.c":78 1B64 text27 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyControl.c":80 1BA2 text27 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyControl.c":81 1BC8 text27 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyControl.c":82 1BD4 text27 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyControl.c":83 1BDC text27 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyControl.c":85 1BE8 text27 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyControl.c":88 1BF4 text27 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyControl.c":89 1C2C text27 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyControl.c":93 1C3C text27 CODE
+"/opt/microchip/xc8/v1.21/sources/common/aldiv.c":14 1C3E text28 CODE
+"/opt/microchip/xc8/v1.21/sources/common/aldiv.c":15 1C4E text28 CODE
+"/opt/microchip/xc8/v1.21/sources/common/aldiv.c":16 1C56 text28 CODE
+"/opt/microchip/xc8/v1.21/sources/common/aldiv.c":17 1C76 text28 CODE
+"/opt/microchip/xc8/v1.21/sources/common/aldiv.c":19 1C86 text28 CODE
+"/opt/microchip/xc8/v1.21/sources/common/aldiv.c":20 1C8E text28 CODE
+"/opt/microchip/xc8/v1.21/sources/common/aldiv.c":21 1CAE text28 CODE
+"/opt/microchip/xc8/v1.21/sources/common/aldiv.c":23 1CB6 text28 CODE
+"/opt/microchip/xc8/v1.21/sources/common/aldiv.c":24 1CD0 text28 CODE
+"/opt/microchip/xc8/v1.21/sources/common/aldiv.c":25 1CE0 text28 CODE
+"/opt/microchip/xc8/v1.21/sources/common/aldiv.c":26 1CF0 text28 CODE
+"/opt/microchip/xc8/v1.21/sources/common/aldiv.c":27 1CF2 text28 CODE
+"/opt/microchip/xc8/v1.21/sources/common/aldiv.c":28 1D06 text28 CODE
+"/opt/microchip/xc8/v1.21/sources/common/aldiv.c":26 1D0C text28 CODE
+"/opt/microchip/xc8/v1.21/sources/common/aldiv.c":31 1D14 text28 CODE
+"/opt/microchip/xc8/v1.21/sources/common/aldiv.c":32 1D28 text28 CODE
+"/opt/microchip/xc8/v1.21/sources/common/aldiv.c":33 1D5C text28 CODE
+"/opt/microchip/xc8/v1.21/sources/common/aldiv.c":34 1D8C text28 CODE
+"/opt/microchip/xc8/v1.21/sources/common/aldiv.c":36 1D92 text28 CODE
+"/opt/microchip/xc8/v1.21/sources/common/aldiv.c":37 1DA6 text28 CODE
+"/opt/microchip/xc8/v1.21/sources/common/aldiv.c":39 1DAE text28 CODE
+"/opt/microchip/xc8/v1.21/sources/common/aldiv.c":40 1DB8 text28 CODE
+"/opt/microchip/xc8/v1.21/sources/common/aldiv.c":41 1DD8 text28 CODE
+"/opt/microchip/xc8/v1.21/sources/common/aldiv.c":42 1DE8 text28 CODE
+"/opt/microchip/xc8/v1.21/sources/common/atol.c":11 1DEA text9 CODE
+"/opt/microchip/xc8/v1.21/sources/common/atol.c":12 1E02 text9 CODE
+"/opt/microchip/xc8/v1.21/sources/common/atol.c":13 1E1A text9 CODE
+"/opt/microchip/xc8/v1.21/sources/common/atol.c":14 1E34 text9 CODE
+"/opt/microchip/xc8/v1.21/sources/common/atol.c":15 1E44 text9 CODE
+"/opt/microchip/xc8/v1.21/sources/common/atol.c":16 1E50 text9 CODE
+"/opt/microchip/xc8/v1.21/sources/common/atol.c":18 1E58 text9 CODE
+"/opt/microchip/xc8/v1.21/sources/common/atol.c":21 1E66 text9 CODE
+"/opt/microchip/xc8/v1.21/sources/common/atol.c":22 1ED2 text9 CODE
+"/opt/microchip/xc8/v1.21/sources/common/atol.c":20 1EEA text9 CODE
+"/opt/microchip/xc8/v1.21/sources/common/atol.c":24 1EF6 text9 CODE
+"/opt/microchip/xc8/v1.21/sources/common/atol.c":25 1F00 text9 CODE
+"/opt/microchip/xc8/v1.21/sources/common/atol.c":26 1F3E text9 CODE
+"/opt/microchip/xc8/v1.21/sources/common/atol.c":27 1F4E text9 CODE
+"/opt/microchip/xc8/v1.21/sources/common/ltoa.c":38 1F50 text18 CODE
+"/opt/microchip/xc8/v1.21/sources/common/ltoa.c":40 1F60 text18 CODE
+"/opt/microchip/xc8/v1.21/sources/common/ltoa.c":41 1FA6 text18 CODE
+"/opt/microchip/xc8/v1.21/sources/common/ltoa.c":42 1FAE text18 CODE
+"/opt/microchip/xc8/v1.21/sources/common/ltoa.c":43 1FBE text18 CODE
+"/opt/microchip/xc8/v1.21/sources/common/ltoa.c":45 1FD4 text18 CODE
+"/opt/microchip/xc8/v1.21/sources/common/ltoa.c":46 2016 text18 CODE
+"/opt/microchip/xc8/v1.21/sources/common/ltoa.c":47 205C text18 CODE
+"/opt/microchip/xc8/v1.21/sources/common/ltoa.c":48 2066 text18 CODE
+"/opt/microchip/xc8/v1.21/sources/common/ltoa.c":49 206E text18 CODE
+"/opt/microchip/xc8/v1.21/sources/common/ltoa.c":50 2076 text18 CODE
+"/opt/microchip/xc8/v1.21/sources/common/ltoa.c":51 208E text18 CODE
+"/opt/microchip/xc8/v1.21/sources/common/ltoa.c":53 209C text18 CODE
+"/opt/microchip/xc8/v1.21/sources/common/ltoa.c":51 209E text18 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":336 20A0 text1 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":338 20D4 text1 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":339 20E8 text1 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":340 20F8 text1 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":341 2126 text1 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":344 2138 text1 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":347 2148 text1 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":348 214E text1 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":349 215E text1 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":350 218C text1 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":351 2190 text1 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":352 219C text1 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":353 219E text1 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":356 21A4 text1 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":357 21AE text1 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":359 21C6 text1 CODE
+"/opt/microchip/xc8/v1.21/sources/common/atoi.c":10 21C8 text7 CODE
+"/opt/microchip/xc8/v1.21/sources/common/atoi.c":11 21CA text7 CODE
+"/opt/microchip/xc8/v1.21/sources/common/atoi.c":10 21D2 text7 CODE
+"/opt/microchip/xc8/v1.21/sources/common/atoi.c":12 21F2 text7 CODE
+"/opt/microchip/xc8/v1.21/sources/common/atoi.c":13 2200 text7 CODE
+"/opt/microchip/xc8/v1.21/sources/common/atoi.c":14 2210 text7 CODE
+"/opt/microchip/xc8/v1.21/sources/common/atoi.c":15 221E text7 CODE
+"/opt/microchip/xc8/v1.21/sources/common/atoi.c":17 2226 text7 CODE
+"/opt/microchip/xc8/v1.21/sources/common/atoi.c":20 2236 text7 CODE
+"/opt/microchip/xc8/v1.21/sources/common/atoi.c":19 2296 text7 CODE
+"/opt/microchip/xc8/v1.21/sources/common/atoi.c":21 22AE text7 CODE
+"/opt/microchip/xc8/v1.21/sources/common/atoi.c":22 22B8 text7 CODE
+"/opt/microchip/xc8/v1.21/sources/common/atoi.c":23 22D8 text7 CODE
+"/opt/microchip/xc8/v1.21/sources/common/atoi.c":24 22E0 text7 CODE
+"/opt/microchip/xc8/v1.21/sources/common/lldiv.c":14 22E2 text31 CODE
+"/opt/microchip/xc8/v1.21/sources/common/lldiv.c":15 22FC text31 CODE
+"/opt/microchip/xc8/v1.21/sources/common/lldiv.c":16 230C text31 CODE
+"/opt/microchip/xc8/v1.21/sources/common/lldiv.c":17 231C text31 CODE
+"/opt/microchip/xc8/v1.21/sources/common/lldiv.c":18 231E text31 CODE
+"/opt/microchip/xc8/v1.21/sources/common/lldiv.c":19 2332 text31 CODE
+"/opt/microchip/xc8/v1.21/sources/common/lldiv.c":17 2338 text31 CODE
+"/opt/microchip/xc8/v1.21/sources/common/lldiv.c":22 2340 text31 CODE
+"/opt/microchip/xc8/v1.21/sources/common/lldiv.c":23 2354 text31 CODE
+"/opt/microchip/xc8/v1.21/sources/common/lldiv.c":24 2388 text31 CODE
+"/opt/microchip/xc8/v1.21/sources/common/lldiv.c":25 23B8 text31 CODE
+"/opt/microchip/xc8/v1.21/sources/common/lldiv.c":27 23BE text31 CODE
+"/opt/microchip/xc8/v1.21/sources/common/lldiv.c":28 23D2 text31 CODE
+"/opt/microchip/xc8/v1.21/sources/common/lldiv.c":30 23DA text31 CODE
+"/opt/microchip/xc8/v1.21/sources/common/lldiv.c":31 23EA text31 CODE
+"/opt/microchip/xc8/v1.21/sources/common/itoa.c":22 23EC text14 CODE
+"/opt/microchip/xc8/v1.21/sources/common/itoa.c":24 23F4 text14 CODE
+"/opt/microchip/xc8/v1.21/sources/common/itoa.c":25 2414 text14 CODE
+"/opt/microchip/xc8/v1.21/sources/common/itoa.c":26 241C text14 CODE
+"/opt/microchip/xc8/v1.21/sources/common/itoa.c":27 2428 text14 CODE
+"/opt/microchip/xc8/v1.21/sources/common/itoa.c":29 243E text14 CODE
+"/opt/microchip/xc8/v1.21/sources/common/itoa.c":30 245E text14 CODE
+"/opt/microchip/xc8/v1.21/sources/common/itoa.c":31 247E text14 CODE
+"/opt/microchip/xc8/v1.21/sources/common/itoa.c":32 2488 text14 CODE
+"/opt/microchip/xc8/v1.21/sources/common/itoa.c":33 2490 text14 CODE
+"/opt/microchip/xc8/v1.21/sources/common/itoa.c":34 2498 text14 CODE
+"/opt/microchip/xc8/v1.21/sources/common/itoa.c":35 24B0 text14 CODE
+"/opt/microchip/xc8/v1.21/sources/common/itoa.c":36 24BC text14 CODE
+"/opt/microchip/xc8/v1.21/sources/common/itoa.c":37 24C4 text14 CODE
+"/opt/microchip/xc8/v1.21/sources/common/llmod.c":13 24C6 text19 CODE
+"/opt/microchip/xc8/v1.21/sources/common/llmod.c":14 24D6 text19 CODE
+"/opt/microchip/xc8/v1.21/sources/common/llmod.c":15 24E6 text19 CODE
+"/opt/microchip/xc8/v1.21/sources/common/llmod.c":16 24E8 text19 CODE
+"/opt/microchip/xc8/v1.21/sources/common/llmod.c":17 24FC text19 CODE
+"/opt/microchip/xc8/v1.21/sources/common/llmod.c":15 2502 text19 CODE
+"/opt/microchip/xc8/v1.21/sources/common/llmod.c":20 250A text19 CODE
+"/opt/microchip/xc8/v1.21/sources/common/llmod.c":21 253E text19 CODE
+"/opt/microchip/xc8/v1.21/sources/common/llmod.c":22 256E text19 CODE
+"/opt/microchip/xc8/v1.21/sources/common/llmod.c":23 2582 text19 CODE
+"/opt/microchip/xc8/v1.21/sources/common/llmod.c":25 258A text19 CODE
+"/opt/microchip/xc8/v1.21/sources/common/llmod.c":26 259A text19 CODE
+"/opt/microchip/xc8/v1.21/sources/common/lwdiv.c":14 259C text16 CODE
+"/opt/microchip/xc8/v1.21/sources/common/lwdiv.c":15 25AA text16 CODE
+"/opt/microchip/xc8/v1.21/sources/common/lwdiv.c":16 25B6 text16 CODE
+"/opt/microchip/xc8/v1.21/sources/common/lwdiv.c":17 25C6 text16 CODE
+"/opt/microchip/xc8/v1.21/sources/common/lwdiv.c":18 25C8 text16 CODE
+"/opt/microchip/xc8/v1.21/sources/common/lwdiv.c":19 25D4 text16 CODE
+"/opt/microchip/xc8/v1.21/sources/common/lwdiv.c":17 25DA text16 CODE
+"/opt/microchip/xc8/v1.21/sources/common/lwdiv.c":22 25E2 text16 CODE
+"/opt/microchip/xc8/v1.21/sources/common/lwdiv.c":23 25EE text16 CODE
+"/opt/microchip/xc8/v1.21/sources/common/lwdiv.c":24 260A text16 CODE
+"/opt/microchip/xc8/v1.21/sources/common/lwdiv.c":25 2622 text16 CODE
+"/opt/microchip/xc8/v1.21/sources/common/lwdiv.c":27 2628 text16 CODE
+"/opt/microchip/xc8/v1.21/sources/common/lwdiv.c":28 2634 text16 CODE
+"/opt/microchip/xc8/v1.21/sources/common/lwdiv.c":30 263C text16 CODE
+"/opt/microchip/xc8/v1.21/sources/common/lwdiv.c":31 2644 text16 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":308 2646 text5 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":309 2676 text5 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":310 2696 text5 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":311 26A2 text5 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":312 26A4 text5 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":321 26B8 text5 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":325 26BC text5 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":326 26BE text5 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":327 26C0 text5 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":329 26C2 text5 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":330 26C4 text5 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":331 26C6 text5 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":315 26C8 text5 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":333 26E2 text5 CODE
+"/opt/microchip/xc8/v1.21/sources/common/lmul.c":4 26E4 text32 CODE
+"/opt/microchip/xc8/v1.21/sources/common/lmul.c":7 26FE text32 CODE
+"/opt/microchip/xc8/v1.21/sources/common/lmul.c":8 2706 text32 CODE
+"/opt/microchip/xc8/v1.21/sources/common/lmul.c":9 2736 text32 CODE
+"/opt/microchip/xc8/v1.21/sources/common/lmul.c":10 274A text32 CODE
+"/opt/microchip/xc8/v1.21/sources/common/lmul.c":11 275E text32 CODE
+"/opt/microchip/xc8/v1.21/sources/common/lmul.c":12 276E text32 CODE
+"/opt/microchip/xc8/v1.21/sources/common/lmul.c":13 277E text32 CODE
+"/tmp/cgtoKUtMY":2467 2780 cinit CODE
+"/tmp/cgtoKUtMY":2468 2784 cinit CODE
+"/tmp/cgtoKUtMY":2470 2786 cinit CODE
+"/tmp/cgtoKUtMY":2471 2788 cinit CODE
+"/tmp/cgtoKUtMY":2472 278A cinit CODE
+"/tmp/cgtoKUtMY":2475 278C cinit CODE
+"/tmp/cgtoKUtMY":2476 2790 cinit CODE
+"/tmp/cgtoKUtMY":2478 2792 cinit CODE
+"/tmp/cgtoKUtMY":2479 2794 cinit CODE
+"/tmp/cgtoKUtMY":2480 2796 cinit CODE
+"/tmp/cgtoKUtMY":2483 2798 cinit CODE
+"/tmp/cgtoKUtMY":2484 279C cinit CODE
+"/tmp/cgtoKUtMY":2486 279E cinit CODE
+"/tmp/cgtoKUtMY":2487 27A0 cinit CODE
+"/tmp/cgtoKUtMY":2488 27A2 cinit CODE
+"/tmp/cgtoKUtMY":2493 27A4 cinit CODE
+"/tmp/cgtoKUtMY":2494 27A6 cinit CODE
+"/tmp/cgtoKUtMY":2495 27A8 cinit CODE
+"/tmp/cgtoKUtMY":2496 27AA cinit CODE
+"/tmp/cgtoKUtMY":2497 27AC cinit CODE
+"/tmp/cgtoKUtMY":2498 27AE cinit CODE
+"/tmp/cgtoKUtMY":2499 27B0 cinit CODE
+"/tmp/cgtoKUtMY":2500 27B4 cinit CODE
+"/tmp/cgtoKUtMY":2502 27B8 cinit CODE
+"/tmp/cgtoKUtMY":2503 27BA cinit CODE
+"/tmp/cgtoKUtMY":2504 27BE cinit CODE
+"/tmp/cgtoKUtMY":2505 27C0 cinit CODE
+"/tmp/cgtoKUtMY":2506 27C2 cinit CODE
+"/tmp/cgtoKUtMY":2510 27C4 cinit CODE
+"/tmp/cgtoKUtMY":2511 27C6 cinit CODE
+"/tmp/cgtoKUtMY":2512 27C8 cinit CODE
+"/tmp/cgtoKUtMY":2513 27CA cinit CODE
+"/tmp/cgtoKUtMY":2514 27CC cinit CODE
+"/tmp/cgtoKUtMY":2515 27CE cinit CODE
+"/tmp/cgtoKUtMY":2516 27D0 cinit CODE
+"/tmp/cgtoKUtMY":2517 27D4 cinit CODE
+"/tmp/cgtoKUtMY":2519 27D8 cinit CODE
+"/tmp/cgtoKUtMY":2520 27DA cinit CODE
+"/tmp/cgtoKUtMY":2521 27DE cinit CODE
+"/tmp/cgtoKUtMY":2522 27E0 cinit CODE
+"/tmp/cgtoKUtMY":2523 27E2 cinit CODE
+"/tmp/cgtoKUtMY":2527 27E4 cinit CODE
+"/tmp/cgtoKUtMY":2528 27E6 cinit CODE
+"/tmp/cgtoKUtMY":2529 27E8 cinit CODE
+"/tmp/cgtoKUtMY":2530 27EA cinit CODE
+"/tmp/cgtoKUtMY":2531 27EC cinit CODE
+"/tmp/cgtoKUtMY":2532 27EE cinit CODE
+"/tmp/cgtoKUtMY":2533 27F0 cinit CODE
+"/tmp/cgtoKUtMY":2534 27F4 cinit CODE
+"/tmp/cgtoKUtMY":2536 27F8 cinit CODE
+"/tmp/cgtoKUtMY":2537 27FA cinit CODE
+"/tmp/cgtoKUtMY":2538 27FE cinit CODE
+"/tmp/cgtoKUtMY":2539 2800 cinit CODE
+"/tmp/cgtoKUtMY":2540 2802 cinit CODE
+"/tmp/cgtoKUtMY":2548 2804 cinit CODE
+"/tmp/cgtoKUtMY":2549 2806 cinit CODE
+"/tmp/cgtoKUtMY":2550 2808 cinit CODE
+"/tmp/cgtoKUtMY":2551 280A cinit CODE
+"/opt/microchip/xc8/v1.21/sources/common/lwmod.c":13 280E text15 CODE
+"/opt/microchip/xc8/v1.21/sources/common/lwmod.c":14 281A text15 CODE
+"/opt/microchip/xc8/v1.21/sources/common/lwmod.c":15 282A text15 CODE
+"/opt/microchip/xc8/v1.21/sources/common/lwmod.c":16 282C text15 CODE
+"/opt/microchip/xc8/v1.21/sources/common/lwmod.c":17 2838 text15 CODE
+"/opt/microchip/xc8/v1.21/sources/common/lwmod.c":15 283E text15 CODE
+"/opt/microchip/xc8/v1.21/sources/common/lwmod.c":20 2846 text15 CODE
+"/opt/microchip/xc8/v1.21/sources/common/lwmod.c":21 2862 text15 CODE
+"/opt/microchip/xc8/v1.21/sources/common/lwmod.c":22 287A text15 CODE
+"/opt/microchip/xc8/v1.21/sources/common/lwmod.c":23 2886 text15 CODE
+"/opt/microchip/xc8/v1.21/sources/common/lwmod.c":25 288E text15 CODE
+"/opt/microchip/xc8/v1.21/sources/common/lwmod.c":26 2896 text15 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/USART/uopen.c":75 2898 text22 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/USART/uopen.c":76 289C text22 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/USART/uopen.c":78 28A0 text22 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/USART/uopen.c":79 28A6 text22 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/USART/uopen.c":81 28A8 text22 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/USART/uopen.c":83 28B0 text22 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/USART/uopen.c":84 28B2 text22 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/USART/uopen.c":87 28B4 text22 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/USART/uopen.c":88 28BA text22 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/USART/uopen.c":90 28BC text22 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/USART/uopen.c":91 28C4 text22 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/USART/uopen.c":93 28C8 text22 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/USART/uopen.c":95 28CA text22 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/USART/uopen.c":96 28D0 text22 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/USART/uopen.c":98 28D2 text22 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/USART/uopen.c":100 28D4 text22 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/USART/uopen.c":101 28DA text22 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/USART/uopen.c":103 28DC text22 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/USART/uopen.c":104 28E4 text22 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/USART/uopen.c":106 28E8 text22 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/USART/uopen.c":108 28EA text22 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/USART/uopen.c":110 28EC text22 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/USART/uopen.c":111 28F4 text22 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/USART/uopen.c":113 28F8 text22 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/USART/uopen.c":115 28FA text22 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/USART/uopen.c":116 28FE text22 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/USART/uopen.c":118 2906 text22 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/USART/uopen.c":119 2908 text22 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/USART/uopen.c":137 290A text22 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/USART/uopen.c":138 290E text22 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/USART/uopen.c":139 2914 text22 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/USART/uopen.c":143 2916 text22 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/ADC/adcopen.c":72 2918 text37 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/ADC/adcopen.c":73 291C text37 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/ADC/adcopen.c":75 2920 text37 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/ADC/adcopen.c":77 292C text37 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/ADC/adcopen.c":80 294C text37 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/ADC/adcopen.c":82 2986 text37 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/ADC/adcopen.c":84 298E text37 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/ADC/adcopen.c":85 2990 text37 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/ADC/adcopen.c":86 2992 text37 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/ADC/adcopen.c":88 2994 text37 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/ADC/adcopen.c":89 2996 text37 CODE
+"/opt/microchip/xc8/v1.21/sources/common/ltoa.c":10 2998 text17 CODE
+"/opt/microchip/xc8/v1.21/sources/common/ltoa.c":12 29A0 text17 CODE
+"/opt/microchip/xc8/v1.21/sources/common/ltoa.c":13 29A8 text17 CODE
+"/opt/microchip/xc8/v1.21/sources/common/ltoa.c":14 29BC text17 CODE
+"/opt/microchip/xc8/v1.21/sources/common/ltoa.c":19 29DC text17 CODE
+"/opt/microchip/xc8/v1.21/sources/common/ltoa.c":22 2A00 text17 CODE
+"/opt/microchip/xc8/v1.21/sources/common/wmul.c":14 2A02 text8 CODE
+"/opt/microchip/xc8/v1.21/sources/common/wmul.c":15 2A16 text8 CODE
+"/opt/microchip/xc8/v1.21/sources/common/wmul.c":16 2A38 text8 CODE
+"/opt/microchip/xc8/v1.21/sources/common/wmul.c":30 2A5A text8 CODE
+"/opt/microchip/xc8/v1.21/sources/common/wmul.c":31 2A62 text8 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":23 2A64 text20 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":24 2A66 text20 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":25 2A6A text20 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":26 2A90 text20 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":23 2A98 text20 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":28 2AC0 text20 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":23 2AC2 text20 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":227 2AC4 text3 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":228 2AE6 text3 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":227 2B02 text3 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":229 2B0C text3 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":230 2B1C text3 CODE
+"/opt/microchip/xc8/v1.21/sources/common/labs.c":6 2B1E text29 CODE
+"/opt/microchip/xc8/v1.21/sources/common/labs.c":7 2B26 text29 CODE
+"/opt/microchip/xc8/v1.21/sources/common/labs.c":8 2B64 text29 CODE
+"/opt/microchip/xc8/v1.21/sources/common/labs.c":9 2B74 text29 CODE
+"/opt/microchip/xc8/v1.21/sources/common/itoa.c":6 2B76 text13 CODE
+"/opt/microchip/xc8/v1.21/sources/common/itoa.c":8 2B7E text13 CODE
+"/opt/microchip/xc8/v1.21/sources/common/itoa.c":9 2B86 text13 CODE
+"/opt/microchip/xc8/v1.21/sources/common/itoa.c":10 2B9A text13 CODE
+"/opt/microchip/xc8/v1.21/sources/common/itoa.c":12 2BA8 text13 CODE
+"/opt/microchip/xc8/v1.21/sources/common/itoa.c":14 2BC4 text13 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/PWM/pw1setdc.c":12 2BC6 text26 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/PWM/pw1setdc.c":15 2BE8 text26 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/PWM/pw1setdc.c":18 2BEC text26 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/PWM/pw1setdc.c":19 2C0C text26 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":227 2C0E text39 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":228 2C26 text39 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":227 2C3A text39 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":229 2C40 text39 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":230 2C4C text39 CODE
+"/opt/microchip/xc8/v1.21/sources/common/isdigit.c":14 2C4E text10 CODE
+"/opt/microchip/xc8/v1.21/sources/common/isdigit.c":15 2C8A text10 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyPWM.c":10 2C8C text23 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyPWM.c":11 2C9E text23 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyPWM.c":12 2CB2 text23 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyPWM.c":13 2CC6 text23 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyADC.c":10 2CC8 text36 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyADC.c":11 2CFC text36 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/Timers/t1open.c":18 2CFE text2 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/Timers/t1open.c":21 2D08 text2 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/Timers/t1open.c":22 2D10 text2 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/Timers/t1open.c":24 2D14 text2 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/Timers/t1open.c":26 2D16 text2 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/Timers/t1open.c":27 2D1A text2 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/Timers/t1open.c":28 2D1E text2 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/Timers/t1open.c":30 2D20 text2 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/Timers/t1open.c":31 2D28 text2 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/Timers/t1open.c":33 2D2C text2 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/Timers/t1open.c":35 2D2E text2 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/Timers/t1open.c":36 2D30 text2 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":125 2D32 text11 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":126 2D42 text11 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":127 2D52 text11 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":128 2D62 text11 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":125 2D64 text40 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":126 2D74 text40 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":127 2D84 text40 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/main.c":128 2D94 text40 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":9 2D96 text21 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":10 2D98 text21 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":11 2D9A text21 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":12 2DBC text21 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyUSART.c":13 2DBE text21 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/Timers/t2open.c":19 2DC0 text25 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/Timers/t2open.c":22 2DCA text25 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/Timers/t2open.c":23 2DCE text25 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/Timers/t2open.c":25 2DD0 text25 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/Timers/t2open.c":26 2DD8 text25 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/Timers/t2open.c":28 2DDC text25 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/Timers/t2open.c":30 2DDE text25 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/Timers/t2open.c":31 2DE0 text25 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/USART/uread.c":19 2DE2 text44 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/USART/uread.c":21 2DE6 text44 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/USART/uread.c":23 2DEA text44 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/USART/uread.c":24 2DEC text44 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/USART/uread.c":25 2DEE text44 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/USART/uread.c":28 2DF0 text44 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/USART/uread.c":29 2DF2 text44 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/USART/uread.c":31 2DF4 text44 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/USART/uread.c":32 2DF6 text44 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/USART/uread.c":34 2DF8 text44 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/USART/uread.c":36 2DFC text44 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/USART/uread.c":37 2DFE text44 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/ADC/adcsetch.c":34 2E00 text35 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/ADC/adcsetch.c":36 2E1A text35 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyADC.c":14 2E1C text33 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyADC.c":15 2E30 text33 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyADC.c":16 2E34 text33 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyADC.c":19 2E36 text45 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyADC.c":20 2E4C text45 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/ADC/adcsetch.c":34 2E4E text42 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/ADC/adcsetch.c":36 2E60 text42 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyADC.c":14 2E74 text41 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyADC.c":15 2E80 text41 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyADC.c":16 2E84 text41 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/PWM/pw1open.c":11 2E86 text24 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/PWM/pw1open.c":13 2E8A text24 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/PWM/pw1open.c":15 2E8C text24 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/PWM/pw1open.c":16 2E8E text24 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/PWM/pw1open.c":17 2E92 text24 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/PWM/pw1open.c":19 2E94 text24 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyPWM.c":16 2E96 text6 CODE
+"/home/electronica/MPLABXProjects/Pendulo.X/MyPWM.c":17 2EA2 text6 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/ADC/adcread.c":26 2EA4 text46 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/ADC/adcread.c":27 2EAC text46 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/ADC/adcconv.c":24 2EBA text34 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/ADC/adcconv.c":25 2EBC text34 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/ADC/adcconv.c":24 2EBE text43 CODE
+"/opt/microchip/xc8/v1.21/sources/pic18/plib/ADC/adcconv.c":25 2EC0 text43 CODE
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___lwdiv@dividend 60 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+___aldiv@counter 69 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__CFG_XINST$OFF 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+___lldiv@counter 79 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+___lwdiv@counter 65 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+_Kd B0 0 BANK0 1 bssBANK0 dist/default/production/Pendulo.X.production.obj
+_Ki B8 0 BANK0 1 bssBANK0 dist/default/production/Pendulo.X.production.obj
+_Kp E1 0 BANK0 1 dataBANK0 dist/default/production/Pendulo.X.production.obj
+_dt 147 0 BANK1 1 bssBANK1 dist/default/production/Pendulo.X.production.obj
+__end_of_OpenUSART 2918 0 CODE 0 text22 dist/default/production/Pendulo.X.production.obj
+__size_of_reset_integral 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+_PR2 FCB 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__S0 30000E 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__S1 157 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+_Kd2 B4 0 BANK0 1 bssBANK0 dist/default/production/Pendulo.X.production.obj
+_Ki2 BC 0 BANK0 1 bssBANK0 dist/default/production/Pendulo.X.production.obj
+_Kp2 E5 0 BANK0 1 dataBANK0 dist/default/production/Pendulo.X.production.obj
+?_enviarEstadoConsola 100 0 BANK1 1 cstackBANK1 dist/default/production/Pendulo.X.production.obj
+_ConfigUSART 2D96 0 CODE 0 text21 dist/default/production/Pendulo.X.production.obj
+__end_of_calcPID 17FA 0 CODE 0 text30 dist/default/production/Pendulo.X.production.obj
+__Hintentry 0 0 ABS 0 intentry dist/default/production/Pendulo.X.production.obj
+__CFG_PWRT$OFF 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__Lintentry 0 0 ABS 0 intentry dist/default/production/Pendulo.X.production.obj
+_MessageBuffer 13D 0 BANK1 1 bssBANK1 dist/default/production/Pendulo.X.production.obj
+__size_of_SetDCPWM1 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+_tik D4 0 BANK0 1 bssBANK0 dist/default/production/Pendulo.X.production.obj
+controlador@dt 104 0 BANK1 1 cstackBANK1 dist/default/production/Pendulo.X.production.obj
+__size_of_setActuador 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+_TMR2 FCC 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+_tik0 14B 0 BANK1 1 bssBANK1 dist/default/production/Pendulo.X.production.obj
+__end_of_setDUTY 2EA4 0 CODE 0 text6 dist/default/production/Pendulo.X.production.obj
+parserRx@j 8A 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+enviarEstadoConsola@Kd 118 0 BANK1 1 cstackBANK1 dist/default/production/Pendulo.X.production.obj
+enviarEstadoConsola@Ki 114 0 BANK1 1 cstackBANK1 dist/default/production/Pendulo.X.production.obj
+_itoa 2B76 0 CODE 0 text13 dist/default/production/Pendulo.X.production.obj
+_ltoa 2998 0 CODE 0 text17 dist/default/production/Pendulo.X.production.obj
+_utoa 23EC 0 CODE 0 text14 dist/default/production/Pendulo.X.production.obj
+_main 17FA 0 CODE 0 text0 dist/default/production/Pendulo.X.production.obj
+_atoi 21C8 0 CODE 0 text7 dist/default/production/Pendulo.X.production.obj
+_labs 2B1E 0 CODE 0 text29 dist/default/production/Pendulo.X.production.obj
+_atol 1DEA 0 CODE 0 text9 dist/default/production/Pendulo.X.production.obj
+enviarEstadoConsola@Kp 110 0 BANK1 1 cstackBANK1 dist/default/production/Pendulo.X.production.obj
+_ctrl 21 0 COMRAM 1 bssCOMRAM dist/default/production/Pendulo.X.production.obj
+_SetChanADC 2E00 0 CODE 0 text35 dist/default/production/Pendulo.X.production.obj
+start 2DA 0 CODE 0 init /tmp/cgta3wWMl.obj
+calcPID@omega A6 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+parserRx@argumento 85 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+parserRx@comando 7C 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__end_of___aldiv 1DEA 0 CODE 0 text28 dist/default/production/Pendulo.X.production.obj
+_TMR1H FCF 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__size_of_accionDeControl 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+_TMR1L FCE 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+_RCREG FAE 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+_TRISA F92 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+_RCSTA FAB 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+_TRISB F93 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+_TRISC F94 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+_TXREG FAD 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+_TRISD F95 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+_SPBRG FAF 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__Hirdata 0 0 CODE 0 irdata dist/default/production/Pendulo.X.production.obj
+_TXSTA FAC 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__Lirdata 0 0 CODE 0 irdata dist/default/production/Pendulo.X.production.obj
+_doPID D9 0 BANK0 1 bssBANK0 dist/default/production/Pendulo.X.production.obj
+__HRAM 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__LRAM 1 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+_T1CON FCD 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+_T2CON FCA 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+itoa@base 75 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+ltoa@base 8D 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+utoa@base 6C 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__size_of_controlador 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+ultoa@buf 7A 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+ultoa@val 7C 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__CFG_WDTPS$32768 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__Hconfig 30000E 0 CONFIG 0 config dist/default/production/Pendulo.X.production.obj
+__Lconfig 300000 0 CONFIG 0 config dist/default/production/Pendulo.X.production.obj
+OpenTimer1@config 60 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+_tik0i 14F 0 BANK1 1 bssBANK1 dist/default/production/Pendulo.X.production.obj
+?___llmod 60 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+atoi@a 6C 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+utoa@c 70 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+atol@a 75 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+atol@c 79 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+_ConvertADC 2EBA 0 CODE 0 text34 dist/default/production/Pendulo.X.production.obj
+OpenTimer2@config 60 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+?___lwmod 60 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+labs@l 60 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+enviarEstadoConsola@Kd2 124 0 BANK1 1 cstackBANK1 dist/default/production/Pendulo.X.production.obj
+atoi@s 66 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__Hbigram 0 0 ABS 0 bigram dist/default/production/Pendulo.X.production.obj
+__Lbigram 0 0 ABS 0 bigram dist/default/production/Pendulo.X.production.obj
+atol@s 6C 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__Hrparam 0 0 ABS 0 rparam dist/default/production/Pendulo.X.production.obj
+utoa@v 6E 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+enviarEstadoConsola@Ki2 120 0 BANK1 1 cstackBANK1 dist/default/production/Pendulo.X.production.obj
+__Lrparam 0 0 ABS 0 rparam dist/default/production/Pendulo.X.production.obj
+?_itoa 71 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+?_ltoa 87 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__Hram 0 0 ABS 0 ram dist/default/production/Pendulo.X.production.obj
+?_utoa 68 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+controlador@Kd 110 0 BANK1 1 cstackBANK1 dist/default/production/Pendulo.X.production.obj
+__Lram 0 0 ABS 0 ram dist/default/production/Pendulo.X.production.obj
+_ultoa 1F50 0 CODE 0 text18 dist/default/production/Pendulo.X.production.obj
+enviarEstadoConsola@Kp2 11C 0 BANK1 1 cstackBANK1 dist/default/production/Pendulo.X.production.obj
+__size_of_ReadUSART 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__Hcomram 0 0 ABS 0 comram dist/default/production/Pendulo.X.production.obj
+__Lcomram 0 0 ABS 0 comram dist/default/production/Pendulo.X.production.obj
+?_atoi 66 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+?_labs 60 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+atoi@sign 6B 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__Hsfr 0 0 ABS 0 sfr dist/default/production/Pendulo.X.production.obj
+atol@sign 74 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__Lsfr 0 0 ABS 0 sfr dist/default/production/Pendulo.X.production.obj
+?_atol 6C 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__end_of__stringdata 86F 0 SMALLCONST 0 smallconst dist/default/production/Pendulo.X.production.obj
+__Hbss 0 0 RAM 1 bss dist/default/production/Pendulo.X.production.obj
+__CFG_STVREN$ON 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__Lbss 0 0 RAM 1 bss dist/default/production/Pendulo.X.production.obj
+enviarEstadoConsola@error 104 0 BANK1 1 cstackBANK1 dist/default/production/Pendulo.X.production.obj
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production/Pendulo.X.production.obj
+?_SetChanADC 60 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production/Pendulo.X.production.obj
+_error C8 0 BANK0 1 bssBANK0 dist/default/production/Pendulo.X.production.obj
+__end_of_parserRx 150A 0 CODE 0 text4 dist/default/production/Pendulo.X.production.obj
+calcPID@dt 7E 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+calcPID@dError A2 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__end_ofi1_borrarBufferRx 2C4E 0 CODE 0 text39 dist/default/production/Pendulo.X.production.obj
+__end_ofi1_ConvertADC 2EC2 0 CODE 0 text43 dist/default/production/Pendulo.X.production.obj
+_parserRx 1036 0 CODE 0 text4 dist/default/production/Pendulo.X.production.obj
+_globalIndexRx DA 0 BANK0 1 bssBANK0 dist/default/production/Pendulo.X.production.obj
+__size_ofi1_comenzarADC 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+_ADCON0 FC2 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+_ADCON1 FC1 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+calcPID@error 7A 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+_posicion ED 0 BANK0 1 dataBANK0 dist/default/production/Pendulo.X.production.obj
+_ADCON2 FC0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+?_sendStr 60 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+_PIE1bits F9D 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production/Pendulo.X.production.obj
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production/Pendulo.X.production.obj
+_PIR1bits F9E 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+_IPR1bits F9F 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+?_isdigit 60 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+_TMR1IE 7CE8 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production/Pendulo.X.production.obj
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production/Pendulo.X.production.obj
+?___aldiv 60 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+_CCPR1L FBE 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+_RCONbits FD0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+?___lldiv 6C 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production/Pendulo.X.production.obj
+_getADC 2E36 0 CODE 0 text45 dist/default/production/Pendulo.X.production.obj
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production/Pendulo.X.production.obj
+__Hintret 0 0 ABS 0 intret dist/default/production/Pendulo.X.production.obj
+__Lintret 0 0 ABS 0 intret dist/default/production/Pendulo.X.production.obj
+__Hramtop 800 0 RAM 0 ramtop dist/default/production/Pendulo.X.production.obj
+__Lramtop 800 0 RAM 0 ramtop dist/default/production/Pendulo.X.production.obj
+__Hstruct 0 0 COMRAM 1 struct dist/default/production/Pendulo.X.production.obj
+__Lstruct 0 0 COMRAM 1 struct dist/default/production/Pendulo.X.production.obj
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production/Pendulo.X.production.obj
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production/Pendulo.X.production.obj
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production/Pendulo.X.production.obj
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production/Pendulo.X.production.obj
+_SPBRGH FB0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+_controlOn F2 0 BANK0 1 dataBANK0 dist/default/production/Pendulo.X.production.obj
+?___lwdiv 60 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+_setPoint 3D 0 COMRAM 1 dataCOMRAM dist/default/production/Pendulo.X.production.obj
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production/Pendulo.X.production.obj
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production/Pendulo.X.production.obj
+__Hintcode 4 0 CODE 0 intcode dist/default/production/Pendulo.X.production.obj
+__Lintcode 4 0 CODE 0 intcode dist/default/production/Pendulo.X.production.obj
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production/Pendulo.X.production.obj
+_ADRESH FC4 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production/Pendulo.X.production.obj
+controlador@Kp 108 0 BANK1 1 cstackBANK1 dist/default/production/Pendulo.X.production.obj
+__Habs1 0 0 ABS 0 abs1 dist/default/production/Pendulo.X.production.obj
+__Labs1 0 0 ABS 0 abs1 dist/default/production/Pendulo.X.production.obj
+_ADRESL FC3 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__CFG_EBTR0$OFF 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+ultoa@base 80 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__end_of_ConfigPWM 2CC8 0 CODE 0 text23 dist/default/production/Pendulo.X.production.obj
+borrarBufferRx@i 61 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production/Pendulo.X.production.obj
+i1SetChanADC@channel 1 0 COMRAM 1 cstackCOMRAM dist/default/production/Pendulo.X.production.obj
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production/Pendulo.X.production.obj
+_comenzarADC 2E1C 0 CODE 0 text33 dist/default/production/Pendulo.X.production.obj
+enviarEstadoConsola@dutyPWMmin 131 0 BANK1 1 cstackBANK1 dist/default/production/Pendulo.X.production.obj
+OpenADC@portconfig 62 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+enviarEstadoConsola@tik 100 0 BANK1 1 cstackBANK1 dist/default/production/Pendulo.X.production.obj
+controlador@dirGiro 116 0 BANK1 1 cstackBANK1 dist/default/production/Pendulo.X.production.obj
+setActuador@dirGiro 6C 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__CFG_EBTR1$OFF 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+_dutyPWMlimitCounter 153 0 BANK1 1 dataBANK1 dist/default/production/Pendulo.X.production.obj
+enviarEstadoConsola@dutyPWMlimitTimeout 139 0 BANK1 1 cstackBANK1 dist/default/production/Pendulo.X.production.obj
+?_accionDeControl 6D 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__end_of_reset_integral 2D64 0 CODE 0 text11 dist/default/production/Pendulo.X.production.obj
+ultoa@c 86 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__CFG_EBTR2$OFF 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+enviarEstadoConsola@buffer 92 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+ultoa@v 82 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__Hdata 0 0 ABS 0 data dist/default/production/Pendulo.X.production.obj
+__Ldata 0 0 ABS 0 data dist/default/production/Pendulo.X.production.obj
+itoa@cp 77 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+ltoa@cp 8F 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__CFG_EBTR3$OFF 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+?_ultoa 7A 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__CFG_CPUDIV$OSC1_PLL2 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__pcstackBANK0 60 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__Htemp 0 0 COMRAM 1 temp dist/default/production/Pendulo.X.production.obj
+_LowIsr 18 0 CODE 0 intcodelo dist/default/production/Pendulo.X.production.obj
+__Ltemp 0 0 COMRAM 1 temp dist/default/production/Pendulo.X.production.obj
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production/Pendulo.X.production.obj
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production/Pendulo.X.production.obj
+___lmul 26E4 0 CODE 0 text32 dist/default/production/Pendulo.X.production.obj
+__Hinit 2DA 0 CODE 0 init dist/default/production/Pendulo.X.production.obj
+__Linit 2DA 0 CODE 0 init dist/default/production/Pendulo.X.production.obj
+__Hintcodelo 2DA 0 CODE 0 intcodelo dist/default/production/Pendulo.X.production.obj
+__Lintcodelo 18 0 CODE 0 intcodelo dist/default/production/Pendulo.X.production.obj
+___wmul 2A02 0 CODE 0 text8 dist/default/production/Pendulo.X.production.obj
+i1_SetChanADC 2E4E 0 CODE 0 text42 dist/default/production/Pendulo.X.production.obj
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production/Pendulo.X.production.obj
+__size_of_SetChanADC 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__end_of_main 1A26 0 CODE 0 text0 dist/default/production/Pendulo.X.production.obj
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production/Pendulo.X.production.obj
+__pintcodelo 18 0 CODE 0 intcodelo dist/default/production/Pendulo.X.production.obj
+__size_of_ConvertADC 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__Htext 0 0 ABS 0 text dist/default/production/Pendulo.X.production.obj
+__Ltext 0 0 ABS 0 text dist/default/production/Pendulo.X.production.obj
+__CFG_CCP2MX$ON 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+main@dirGiro AF 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+___lmul@multiplier 60 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+___wmul@multiplier 60 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__HdataBANK0 0 0 ABS 0 dataBANK0 dist/default/production/Pendulo.X.production.obj
+__LdataBANK0 0 0 ABS 0 dataBANK0 dist/default/production/Pendulo.X.production.obj
+__pdataBANK0 E1 0 BANK0 1 dataBANK0 dist/default/production/Pendulo.X.production.obj
+end_of_initialization 2804 0 CODE 0 cinit dist/default/production/Pendulo.X.production.obj
+___aldiv@sign 6A 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+SetChanADC@channel 60 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+OpenUSART@spbrg 61 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__size_of_LowIsr 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+calcPID@epsilon 9A 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__CFG_USBDIV$1 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+controlador@accionControl AA 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__size_of_atol 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+___lmul@multiplicand 64 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+___wmul@multiplicand 62 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__size_of_getADC 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__CFG_VREGEN$OFF 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__size_of_ConfigADC 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__size_of_ConfigPWM 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__end_of_controlador 1C3E 0 CODE 0 text27 dist/default/production/Pendulo.X.production.obj
+__size_ofi1_ConvertADC 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__HdataBANK1 0 0 ABS 0 dataBANK1 dist/default/production/Pendulo.X.production.obj
+__LdataBANK1 0 0 ABS 0 dataBANK1 dist/default/production/Pendulo.X.production.obj
+__pdataBANK1 153 0 BANK1 1 dataBANK1 dist/default/production/Pendulo.X.production.obj
+controlador@error 100 0 BANK1 1 cstackBANK1 dist/default/production/Pendulo.X.production.obj
+_RCSTAbits FAB 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+_TRISCbits F94 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+controlador@dutyPWM 114 0 BANK1 1 cstackBANK1 dist/default/production/Pendulo.X.production.obj
+_TXSTAbits FAC 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+_PORTDbits F83 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+_T1CONbits FCD 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+_T2CONbits FCA 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+setActuador@dutyPWM 68 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+_ReadADC 2EA4 0 CODE 0 text46 dist/default/production/Pendulo.X.production.obj
+_OpenTimer1 2CFE 0 CODE 0 text2 dist/default/production/Pendulo.X.production.obj
+_SetDCPWM1 2BC6 0 CODE 0 text26 dist/default/production/Pendulo.X.production.obj
+_OpenADC 2918 0 CODE 0 text37 dist/default/production/Pendulo.X.production.obj
+_dentroDeStep 28 0 COMRAM 1 bssCOMRAM dist/default/production/Pendulo.X.production.obj
+?_getADC 3 0 COMRAM 1 cstackCOMRAM dist/default/production/Pendulo.X.production.obj
+__size_of_ConfigUSART 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production/Pendulo.X.production.obj
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production/Pendulo.X.production.obj
+_calcPID 150A 0 CODE 0 text30 dist/default/production/Pendulo.X.production.obj
+__size_of_OpenADC 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+_CCP1CON FBD 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+parserRx@potencia 81 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+_OpenTimer2 2DC0 0 CODE 0 text25 dist/default/production/Pendulo.X.production.obj
+__end_of_atoi 22E2 0 CODE 0 text7 dist/default/production/Pendulo.X.production.obj
+__Hifardata 0 0 CODE 0 ifardata dist/default/production/Pendulo.X.production.obj
+__Lifardata 0 0 CODE 0 ifardata dist/default/production/Pendulo.X.production.obj
+__Hbank0 0 0 ABS 0 bank0 dist/default/production/Pendulo.X.production.obj
+__Lbank0 0 0 ABS 0 bank0 dist/default/production/Pendulo.X.production.obj
+__Hbank1 0 0 ABS 0 bank1 dist/default/production/Pendulo.X.production.obj
+__end_of_sendStr 2AC4 0 CODE 0 text20 dist/default/production/Pendulo.X.production.obj
+__Lbank1 0 0 ABS 0 bank1 dist/default/production/Pendulo.X.production.obj
+__Hbank2 0 0 ABS 0 bank2 dist/default/production/Pendulo.X.production.obj
+__Lbank2 0 0 ABS 0 bank2 dist/default/production/Pendulo.X.production.obj
+__end_of_labs 2B76 0 CODE 0 text29 dist/default/production/Pendulo.X.production.obj
+__size_of_OpenTimer1 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__size_of_OpenTimer2 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+_isdigit$1965 62 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__Hbank3 0 0 ABS 0 bank3 dist/default/production/Pendulo.X.production.obj
+__Lbank3 0 0 ABS 0 bank3 dist/default/production/Pendulo.X.production.obj
+__Hbank4 0 0 ABS 0 bank4 dist/default/production/Pendulo.X.production.obj
+__Lbank4 0 0 ABS 0 bank4 dist/default/production/Pendulo.X.production.obj
+__end_of___lmul 2780 0 CODE 0 text32 dist/default/production/Pendulo.X.production.obj
+?_OpenPWM1 60 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__Hbank5 0 0 ABS 0 bank5 dist/default/production/Pendulo.X.production.obj
+__Lbank5 0 0 ABS 0 bank5 dist/default/production/Pendulo.X.production.obj
+__Hpowerup 2DA 0 CODE 0 powerup dist/default/production/Pendulo.X.production.obj
+__Lpowerup 2DA 0 CODE 0 powerup dist/default/production/Pendulo.X.production.obj
+__Hbank6 0 0 ABS 0 bank6 dist/default/production/Pendulo.X.production.obj
+__Lbank6 0 0 ABS 0 bank6 dist/default/production/Pendulo.X.production.obj
+__Hbank7 0 0 ABS 0 bank7 dist/default/production/Pendulo.X.production.obj
+__Lbank7 0 0 ABS 0 bank7 dist/default/production/Pendulo.X.production.obj
+_lastTIK CC 0 BANK0 1 bssBANK0 dist/default/production/Pendulo.X.production.obj
+_iError1 29 0 COMRAM 1 bssCOMRAM dist/default/production/Pendulo.X.production.obj
+__Htext0 0 0 ABS 0 text0 dist/default/production/Pendulo.X.production.obj
+__Ltext0 0 0 ABS 0 text0 dist/default/production/Pendulo.X.production.obj
+_iError2 2D 0 COMRAM 1 bssCOMRAM dist/default/production/Pendulo.X.production.obj
+__Htext1 0 0 ABS 0 text1 dist/default/production/Pendulo.X.production.obj
+__Ltext1 0 0 ABS 0 text1 dist/default/production/Pendulo.X.production.obj
+__ptext0 17FA 0 CODE 0 text0 dist/default/production/Pendulo.X.production.obj
+_INTCON2bits FF1 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__Htext2 0 0 ABS 0 text2 dist/default/production/Pendulo.X.production.obj
+__Ltext2 0 0 ABS 0 text2 dist/default/production/Pendulo.X.production.obj
+__ptext1 20A0 0 CODE 0 text1 dist/default/production/Pendulo.X.production.obj
+__Htext3 0 0 ABS 0 text3 dist/default/production/Pendulo.X.production.obj
+__Ltext3 0 0 ABS 0 text3 dist/default/production/Pendulo.X.production.obj
+__ptext2 2CFE 0 CODE 0 text2 dist/default/production/Pendulo.X.production.obj
+_potenciaStep D0 0 BANK0 1 bssBANK0 dist/default/production/Pendulo.X.production.obj
+__Htext4 0 0 ABS 0 text4 dist/default/production/Pendulo.X.production.obj
+__Ltext4 0 0 ABS 0 text4 dist/default/production/Pendulo.X.production.obj
+__ptext3 2AC4 0 CODE 0 text3 dist/default/production/Pendulo.X.production.obj
+__Htext5 0 0 ABS 0 text5 dist/default/production/Pendulo.X.production.obj
+__Ltext5 0 0 ABS 0 text5 dist/default/production/Pendulo.X.production.obj
+__ptext4 1036 0 CODE 0 text4 dist/default/production/Pendulo.X.production.obj
+__Htext6 0 0 ABS 0 text6 dist/default/production/Pendulo.X.production.obj
+__Ltext6 0 0 ABS 0 text6 dist/default/production/Pendulo.X.production.obj
+__ptext5 2646 0 CODE 0 text5 dist/default/production/Pendulo.X.production.obj
+__Htext7 0 0 ABS 0 text7 dist/default/production/Pendulo.X.production.obj
+__Ltext7 0 0 ABS 0 text7 dist/default/production/Pendulo.X.production.obj
+__ptext6 2E96 0 CODE 0 text6 dist/default/production/Pendulo.X.production.obj
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production/Pendulo.X.production.obj
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production/Pendulo.X.production.obj
+OpenUSART@config 60 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__end_of_ConvertADC 2EBE 0 CODE 0 text34 dist/default/production/Pendulo.X.production.obj
+__Htext8 0 0 ABS 0 text8 dist/default/production/Pendulo.X.production.obj
+__Ltext8 0 0 ABS 0 text8 dist/default/production/Pendulo.X.production.obj
+__ptext7 21C8 0 CODE 0 text7 dist/default/production/Pendulo.X.production.obj
+_dutyPWM DD 0 BANK0 1 bssBANK0 dist/default/production/Pendulo.X.production.obj
+__pbssCOMRAM 21 0 COMRAM 1 bssCOMRAM dist/default/production/Pendulo.X.production.obj
+__Htext9 0 0 ABS 0 text9 dist/default/production/Pendulo.X.production.obj
+__HcstackBANK1 0 0 ABS 0 cstackBANK1 dist/default/production/Pendulo.X.production.obj
+__Ltext9 0 0 ABS 0 text9 dist/default/production/Pendulo.X.production.obj
+__LcstackBANK1 0 0 ABS 0 cstackBANK1 dist/default/production/Pendulo.X.production.obj
+__ptext8 2A02 0 CODE 0 text8 dist/default/production/Pendulo.X.production.obj
+__ptext9 1DEA 0 CODE 0 text9 dist/default/production/Pendulo.X.production.obj
+__pcstackBANK1 100 0 BANK1 1 cstackBANK1 dist/default/production/Pendulo.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production/Pendulo.X.production.obj
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production/Pendulo.X.production.obj
+_setDUTY 2E96 0 CODE 0 text6 dist/default/production/Pendulo.X.production.obj
+_controlador 1A26 0 CODE 0 text27 dist/default/production/Pendulo.X.production.obj
+_setActuador 2646 0 CODE 0 text5 dist/default/production/Pendulo.X.production.obj
+__size_of_parserRx 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+enviarEstadoConsola@potenciaStep 12D 0 BANK1 1 cstackBANK1 dist/default/production/Pendulo.X.production.obj
+__end_of__initialization 2804 0 CODE 0 cinit dist/default/production/Pendulo.X.production.obj
+OpenPWM1@period 60 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__size_of_calcPID 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+_BAUDCONbits FB8 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__end_of___lwdiv 2646 0 CODE 0 text16 dist/default/production/Pendulo.X.production.obj
+i1_ConvertADC 2EBE 0 CODE 0 text43 dist/default/production/Pendulo.X.production.obj
+__end_of_setActuador 26E4 0 CODE 0 text5 dist/default/production/Pendulo.X.production.obj
+calcPID@iErrorPtr 90 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+?_OpenUSART 60 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+enviarEstadoConsola@controlOn 128 0 BANK1 1 cstackBANK1 dist/default/production/Pendulo.X.production.obj
+__CFG_PLLDIV$2 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+enviarEstadoConsola@ctrl 10C 0 BANK1 1 cstackBANK1 dist/default/production/Pendulo.X.production.obj
+_contadorCiclosControlOff 25 0 COMRAM 1 bssCOMRAM dist/default/production/Pendulo.X.production.obj
+__end_of_comenzarADC 2E36 0 CODE 0 text33 dist/default/production/Pendulo.X.production.obj
+_dutyPWMmin C4 0 BANK0 1 bssBANK0 dist/default/production/Pendulo.X.production.obj
+_ConfigADC 2CC8 0 CODE 0 text36 dist/default/production/Pendulo.X.production.obj
+__end_ofi1_SetChanADC 2E62 0 CODE 0 text42 dist/default/production/Pendulo.X.production.obj
+_USART_Status 27 0 COMRAM 1 bssCOMRAM dist/default/production/Pendulo.X.production.obj
+ReadUSART@data 1 0 COMRAM 1 cstackCOMRAM dist/default/production/Pendulo.X.production.obj
+__Hidata 0 0 CODE 0 idata dist/default/production/Pendulo.X.production.obj
+__Lidata 0 0 CODE 0 idata dist/default/production/Pendulo.X.production.obj
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production/Pendulo.X.production.obj
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production/Pendulo.X.production.obj
+calcPID@output 9E 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__Hidloc 200008 0 IDLOC 0 idloc dist/default/production/Pendulo.X.production.obj
+itoa@buf 71 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__Lidloc 200000 0 IDLOC 0 idloc dist/default/production/Pendulo.X.production.obj
+ltoa@buf 87 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+utoa@buf 68 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__end_of_ReadADC 2EAE 0 CODE 0 text46 dist/default/production/Pendulo.X.production.obj
+itoa@val 73 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+ltoa@val 89 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+utoa@val 6A 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+i1_borrarBufferRx 2C0E 0 CODE 0 text39 dist/default/production/Pendulo.X.production.obj
+___llmod 24C6 0 CODE 0 text19 dist/default/production/Pendulo.X.production.obj
+__end_of___lldiv 23EC 0 CODE 0 text31 dist/default/production/Pendulo.X.production.obj
+___lwmod 280E 0 CODE 0 text15 dist/default/production/Pendulo.X.production.obj
+__Hparam 0 0 ABS 0 rparam dist/default/production/Pendulo.X.production.obj
+__Lparam 0 0 ABS 0 rparam dist/default/production/Pendulo.X.production.obj
+LowIsr@caracterRx 20 0 COMRAM 1 cstackCOMRAM dist/default/production/Pendulo.X.production.obj
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production/Pendulo.X.production.obj
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production/Pendulo.X.production.obj
+_verbose DC 0 BANK0 1 bssBANK0 dist/default/production/Pendulo.X.production.obj
+enviarEstadoConsola@dirStep 129 0 BANK1 1 cstackBANK1 dist/default/production/Pendulo.X.production.obj
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production/Pendulo.X.production.obj
+_dirStep C0 0 BANK0 1 bssBANK0 dist/default/production/Pendulo.X.production.obj
+__Hsmallconst 870 0 SMALLCONST 0 smallconst dist/default/production/Pendulo.X.production.obj
+__Lsmallconst 800 0 SMALLCONST 0 smallconst dist/default/production/Pendulo.X.production.obj
+__psmallconst 800 0 SMALLCONST 0 smallconst dist/default/production/Pendulo.X.production.obj
+OpenADC@config 60 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+_sendStr 2A64 0 CODE 0 text20 dist/default/production/Pendulo.X.production.obj
+?___lmul 60 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production/Pendulo.X.production.obj
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production/Pendulo.X.production.obj
+?___wmul 60 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+_isdigit 2C4E 0 CODE 0 text10 dist/default/production/Pendulo.X.production.obj
+_dutyPWMlimitTimeout 39 0 COMRAM 1 dataCOMRAM dist/default/production/Pendulo.X.production.obj
+?i1_SetChanADC 1 0 COMRAM 1 cstackCOMRAM dist/default/production/Pendulo.X.production.obj
+__Hcinit 0 0 ABS 0 cinit dist/default/production/Pendulo.X.production.obj
+__Lcinit 0 0 ABS 0 cinit dist/default/production/Pendulo.X.production.obj
+__CFG_FOSC$HS 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+___aldiv 1C3E 0 CODE 0 text28 dist/default/production/Pendulo.X.production.obj
+___lldiv 22E2 0 CODE 0 text31 dist/default/production/Pendulo.X.production.obj
+__pcinit 2780 0 CODE 0 cinit dist/default/production/Pendulo.X.production.obj
+__CFG_EBTRB$OFF 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__ramtop 800 0 RAM 0 ramtop /tmp/cgta3wWMl.obj
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst /tmp/cgta3wWMl.obj
+___lwdiv 259C 0 CODE 0 text16 dist/default/production/Pendulo.X.production.obj
+__size_of_main 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__size_of_comenzarADC 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__Hconst 0 0 CODE 0 const dist/default/production/Pendulo.X.production.obj
+__Lconst 0 0 CODE 0 const dist/default/production/Pendulo.X.production.obj
+__size_of_OpenUSART 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+calcPID@lastErrorPtr 8E 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__size_of_itoa 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+_controlAntesDelStep F1 0 BANK0 1 dataBANK0 dist/default/production/Pendulo.X.production.obj
+__HidataBANK0 0 0 ABS 0 idataBANK0 dist/default/production/Pendulo.X.production.obj
+__LidataBANK0 0 0 ABS 0 idataBANK0 dist/default/production/Pendulo.X.production.obj
+__pidataBANK0 2E62 0 CODE 0 idataBANK0 dist/default/production/Pendulo.X.production.obj
+_reset_integral 2D32 0 CODE 0 text11 dist/default/production/Pendulo.X.production.obj
+__size_of_OpenPWM1 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__end_of_isdigit 2C8C 0 CODE 0 text10 dist/default/production/Pendulo.X.production.obj
+__CFG_WRT0$OFF 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__size_of_setDUTY 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__CFG_WRT1$OFF 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__end_of_LowIsr 2DA 0 CODE 0 intcodelo dist/default/production/Pendulo.X.production.obj
+__size_of___lwdiv 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__end_of_atol 1F50 0 CODE 0 text9 dist/default/production/Pendulo.X.production.obj
+SetDCPWM1@dutycycle 60 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__end_of_getADC 2E4E 0 CODE 0 text45 dist/default/production/Pendulo.X.production.obj
+__HbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production/Pendulo.X.production.obj
+__LbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production/Pendulo.X.production.obj
+__end_of_ConfigUSART 2DC0 0 CODE 0 text21 dist/default/production/Pendulo.X.production.obj
+__CFG_WRT2$OFF 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__pbssBANK0 B0 0 BANK0 1 bssBANK0 dist/default/production/Pendulo.X.production.obj
+__size_of_isdigit 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__size_of_ltoa 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__CFG_WRT3$OFF 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__HbssBANK1 0 0 ABS 0 bssBANK1 dist/default/production/Pendulo.X.production.obj
+__LbssBANK1 0 0 ABS 0 bssBANK1 dist/default/production/Pendulo.X.production.obj
+_enviarEstadoConsola 870 0 CODE 0 text12 dist/default/production/Pendulo.X.production.obj
+__pbssBANK1 13D 0 BANK1 1 bssBANK1 dist/default/production/Pendulo.X.production.obj
+__Htext10 0 0 ABS 0 text10 dist/default/production/Pendulo.X.production.obj
+__Ltext10 0 0 ABS 0 text10 dist/default/production/Pendulo.X.production.obj
+__end_of_OpenTimer1 2D32 0 CODE 0 text2 dist/default/production/Pendulo.X.production.obj
+__end_of_OpenTimer2 2DE2 0 CODE 0 text25 dist/default/production/Pendulo.X.production.obj
+__Htext20 0 0 ABS 0 text20 dist/default/production/Pendulo.X.production.obj
+__Ltext20 0 0 ABS 0 text20 dist/default/production/Pendulo.X.production.obj
+__ptext10 2C4E 0 CODE 0 text10 dist/default/production/Pendulo.X.production.obj
+__Htext30 0 0 ABS 0 text30 dist/default/production/Pendulo.X.production.obj
+__Htext11 0 0 ABS 0 text11 dist/default/production/Pendulo.X.production.obj
+__Ltext30 0 0 ABS 0 text30 dist/default/production/Pendulo.X.production.obj
+__Ltext11 0 0 ABS 0 text11 dist/default/production/Pendulo.X.production.obj
+__ptext20 2A64 0 CODE 0 text20 dist/default/production/Pendulo.X.production.obj
+__Htext40 0 0 ABS 0 text40 dist/default/production/Pendulo.X.production.obj
+__Htext21 0 0 ABS 0 text21 dist/default/production/Pendulo.X.production.obj
+__Ltext40 0 0 ABS 0 text40 dist/default/production/Pendulo.X.production.obj
+__Ltext21 0 0 ABS 0 text21 dist/default/production/Pendulo.X.production.obj
+__ptext11 2D32 0 CODE 0 text11 dist/default/production/Pendulo.X.production.obj
+__ptext30 150A 0 CODE 0 text30 dist/default/production/Pendulo.X.production.obj
+__Htext31 0 0 ABS 0 text31 dist/default/production/Pendulo.X.production.obj
+__Htext12 0 0 ABS 0 text12 dist/default/production/Pendulo.X.production.obj
+__Ltext31 0 0 ABS 0 text31 dist/default/production/Pendulo.X.production.obj
+__Ltext12 0 0 ABS 0 text12 dist/default/production/Pendulo.X.production.obj
+__ptext21 2D96 0 CODE 0 text21 dist/default/production/Pendulo.X.production.obj
+__ptext40 2D64 0 CODE 0 text40 dist/default/production/Pendulo.X.production.obj
+__Htext41 0 0 ABS 0 text41 dist/default/production/Pendulo.X.production.obj
+__Htext22 0 0 ABS 0 text22 dist/default/production/Pendulo.X.production.obj
+__Ltext41 0 0 ABS 0 text41 dist/default/production/Pendulo.X.production.obj
+__Ltext22 0 0 ABS 0 text22 dist/default/production/Pendulo.X.production.obj
+__ptext12 870 0 CODE 0 text12 dist/default/production/Pendulo.X.production.obj
+__ptext31 22E2 0 CODE 0 text31 dist/default/production/Pendulo.X.production.obj
+__Htext32 0 0 ABS 0 text32 dist/default/production/Pendulo.X.production.obj
+__Htext13 0 0 ABS 0 text13 dist/default/production/Pendulo.X.production.obj
+__Ltext32 0 0 ABS 0 text32 dist/default/production/Pendulo.X.production.obj
+__Ltext13 0 0 ABS 0 text13 dist/default/production/Pendulo.X.production.obj
+__ptext22 2898 0 CODE 0 text22 dist/default/production/Pendulo.X.production.obj
+__ptext41 2E74 0 CODE 0 text41 dist/default/production/Pendulo.X.production.obj
+_OpenPWM1 2E86 0 CODE 0 text24 dist/default/production/Pendulo.X.production.obj
+_banderaParser D8 0 BANK0 1 bssBANK0 dist/default/production/Pendulo.X.production.obj
+__Htext42 0 0 ABS 0 text42 dist/default/production/Pendulo.X.production.obj
+__Htext23 0 0 ABS 0 text23 dist/default/production/Pendulo.X.production.obj
+__Ltext42 0 0 ABS 0 text42 dist/default/production/Pendulo.X.production.obj
+__Ltext23 0 0 ABS 0 text23 dist/default/production/Pendulo.X.production.obj
+__ptext13 2B76 0 CODE 0 text13 dist/default/production/Pendulo.X.production.obj
+__ptext32 26E4 0 CODE 0 text32 dist/default/production/Pendulo.X.production.obj
+_ADCON0bits FC2 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__Htext33 0 0 ABS 0 text33 dist/default/production/Pendulo.X.production.obj
+__Htext14 0 0 ABS 0 text14 dist/default/production/Pendulo.X.production.obj
+__Ltext33 0 0 ABS 0 text33 dist/default/production/Pendulo.X.production.obj
+__Ltext14 0 0 ABS 0 text14 dist/default/production/Pendulo.X.production.obj
+__ptext23 2C8C 0 CODE 0 text23 dist/default/production/Pendulo.X.production.obj
+__ptext42 2E4E 0 CODE 0 text42 dist/default/production/Pendulo.X.production.obj
+__HidataBANK1 0 0 ABS 0 idataBANK1 dist/default/production/Pendulo.X.production.obj
+__LidataBANK1 0 0 ABS 0 idataBANK1 dist/default/production/Pendulo.X.production.obj
+__Htext43 0 0 ABS 0 text43 dist/default/production/Pendulo.X.production.obj
+__Htext24 0 0 ABS 0 text24 dist/default/production/Pendulo.X.production.obj
+__Ltext43 0 0 ABS 0 text43 dist/default/production/Pendulo.X.production.obj
+__Ltext24 0 0 ABS 0 text24 dist/default/production/Pendulo.X.production.obj
+__ptext14 23EC 0 CODE 0 text14 dist/default/production/Pendulo.X.production.obj
+__ptext33 2E1C 0 CODE 0 text33 dist/default/production/Pendulo.X.production.obj
+__pidataBANK1 2EB6 0 CODE 0 idataBANK1 dist/default/production/Pendulo.X.production.obj
+__Htext34 0 0 ABS 0 text34 dist/default/production/Pendulo.X.production.obj
+__Htext15 0 0 ABS 0 text15 dist/default/production/Pendulo.X.production.obj
+__Ltext34 0 0 ABS 0 text34 dist/default/production/Pendulo.X.production.obj
+__Ltext15 0 0 ABS 0 text15 dist/default/production/Pendulo.X.production.obj
+__ptext24 2E86 0 CODE 0 text24 dist/default/production/Pendulo.X.production.obj
+__ptext43 2EBE 0 CODE 0 text43 dist/default/production/Pendulo.X.production.obj
+__Htext44 0 0 ABS 0 text44 dist/default/production/Pendulo.X.production.obj
+__Htext25 0 0 ABS 0 text25 dist/default/production/Pendulo.X.production.obj
+__Ltext44 0 0 ABS 0 text44 dist/default/production/Pendulo.X.production.obj
+__Ltext25 0 0 ABS 0 text25 dist/default/production/Pendulo.X.production.obj
+__ptext15 280E 0 CODE 0 text15 dist/default/production/Pendulo.X.production.obj
+__ptext34 2EBA 0 CODE 0 text34 dist/default/production/Pendulo.X.production.obj
+__Htext35 0 0 ABS 0 text35 dist/default/production/Pendulo.X.production.obj
+__Htext16 0 0 ABS 0 text16 dist/default/production/Pendulo.X.production.obj
+__Ltext35 0 0 ABS 0 text35 dist/default/production/Pendulo.X.production.obj
+__Ltext16 0 0 ABS 0 text16 dist/default/production/Pendulo.X.production.obj
+__ptext25 2DC0 0 CODE 0 text25 dist/default/production/Pendulo.X.production.obj
+__ptext44 2DE2 0 CODE 0 text44 dist/default/production/Pendulo.X.production.obj
+__Htext45 0 0 ABS 0 text45 dist/default/production/Pendulo.X.production.obj
+__Htext26 0 0 ABS 0 text26 dist/default/production/Pendulo.X.production.obj
+__Ltext45 0 0 ABS 0 text45 dist/default/production/Pendulo.X.production.obj
+__Ltext26 0 0 ABS 0 text26 dist/default/production/Pendulo.X.production.obj
+__ptext16 259C 0 CODE 0 text16 dist/default/production/Pendulo.X.production.obj
+__ptext35 2E00 0 CODE 0 text35 dist/default/production/Pendulo.X.production.obj
+__Htext36 0 0 ABS 0 text36 dist/default/production/Pendulo.X.production.obj
+__Htext17 0 0 ABS 0 text17 dist/default/production/Pendulo.X.production.obj
+__Ltext36 0 0 ABS 0 text36 dist/default/production/Pendulo.X.production.obj
+__Ltext17 0 0 ABS 0 text17 dist/default/production/Pendulo.X.production.obj
+__ptext26 2BC6 0 CODE 0 text26 dist/default/production/Pendulo.X.production.obj
+__ptext45 2E36 0 CODE 0 text45 dist/default/production/Pendulo.X.production.obj
+__size_of_ultoa 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__Htext46 0 0 ABS 0 text46 dist/default/production/Pendulo.X.production.obj
+__Htext27 0 0 ABS 0 text27 dist/default/production/Pendulo.X.production.obj
+__Ltext46 0 0 ABS 0 text46 dist/default/production/Pendulo.X.production.obj
+__Ltext27 0 0 ABS 0 text27 dist/default/production/Pendulo.X.production.obj
+___llmod@divisor 64 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__ptext17 2998 0 CODE 0 text17 dist/default/production/Pendulo.X.production.obj
+__ptext36 2CC8 0 CODE 0 text36 dist/default/production/Pendulo.X.production.obj
+__Htext37 0 0 ABS 0 text37 dist/default/production/Pendulo.X.production.obj
+__Htext18 0 0 ABS 0 text18 dist/default/production/Pendulo.X.production.obj
+__end_of___lwmod 2898 0 CODE 0 text15 dist/default/production/Pendulo.X.production.obj
+__Ltext37 0 0 ABS 0 text37 dist/default/production/Pendulo.X.production.obj
+__Ltext18 0 0 ABS 0 text18 dist/default/production/Pendulo.X.production.obj
+__ptext27 1A26 0 CODE 0 text27 dist/default/production/Pendulo.X.production.obj
+__ptext46 2EA4 0 CODE 0 text46 dist/default/production/Pendulo.X.production.obj
+___lwmod@divisor 62 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__end_ofi1_reset_integral 2D96 0 CODE 0 text40 dist/default/production/Pendulo.X.production.obj
+__Htext28 0 0 ABS 0 text28 dist/default/production/Pendulo.X.production.obj
+__Ltext28 0 0 ABS 0 text28 dist/default/production/Pendulo.X.production.obj
+__ptext18 1F50 0 CODE 0 text18 dist/default/production/Pendulo.X.production.obj
+__ptext37 2918 0 CODE 0 text37 dist/default/production/Pendulo.X.production.obj
+__Htext19 0 0 ABS 0 text19 dist/default/production/Pendulo.X.production.obj
+__Ltext19 0 0 ABS 0 text19 dist/default/production/Pendulo.X.production.obj
+__ptext28 1C3E 0 CODE 0 text28 dist/default/production/Pendulo.X.production.obj
+__Htext29 0 0 ABS 0 text29 dist/default/production/Pendulo.X.production.obj
+__Ltext29 0 0 ABS 0 text29 dist/default/production/Pendulo.X.production.obj
+__ptext19 24C6 0 CODE 0 text19 dist/default/production/Pendulo.X.production.obj
+__CFG_BORV$3 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__Htext39 0 0 ABS 0 text39 dist/default/production/Pendulo.X.production.obj
+__Ltext39 0 0 ABS 0 text39 dist/default/production/Pendulo.X.production.obj
+__ptext29 2B1E 0 CODE 0 text29 dist/default/production/Pendulo.X.production.obj
+__ptext39 2C0E 0 CODE 0 text39 dist/default/production/Pendulo.X.production.obj
+_ReadUSART 2DE2 0 CODE 0 text44 dist/default/production/Pendulo.X.production.obj
+_INTCONbits FF2 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__end_ofi1_comenzarADC 2E86 0 CODE 0 text41 dist/default/production/Pendulo.X.production.obj
+sendStr@dataPtr 60 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+_OpenUSART 2898 0 CODE 0 text22 dist/default/production/Pendulo.X.production.obj
+__Hend_init 2DE 0 CODE 0 end_init dist/default/production/Pendulo.X.production.obj
+__Lend_init 2DA 0 CODE 0 end_init dist/default/production/Pendulo.X.production.obj
+?_ReadADC 1 0 COMRAM 1 cstackCOMRAM dist/default/production/Pendulo.X.production.obj
+?_OpenTimer1 60 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+___aldiv@divisor 64 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+___lldiv@divisor 70 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+?_SetDCPWM1 60 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__size_of___lldiv 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+?_OpenADC 60 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__HidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production/Pendulo.X.production.obj
+__LidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production/Pendulo.X.production.obj
+___lwdiv@divisor 62 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__size_of_enviarEstadoConsola 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__pidataCOMRAM 2EAE 0 CODE 0 idataCOMRAM dist/default/production/Pendulo.X.production.obj
+_retornoParametros DB 0 BANK0 1 bssBANK0 dist/default/production/Pendulo.X.production.obj
+accionDeControl@dirGiro 6D 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__end_of_ReadUSART 2E00 0 CODE 0 text44 dist/default/production/Pendulo.X.production.obj
+OpenADC@config2 61 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+_ConfigPWM 2C8C 0 CODE 0 text23 dist/default/production/Pendulo.X.production.obj
+__end_of_OpenPWM1 2E96 0 CODE 0 text24 dist/default/production/Pendulo.X.production.obj
+__end_of___llmod 259C 0 CODE 0 text19 dist/default/production/Pendulo.X.production.obj
+__CFG_CP0$OFF 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__smallconst 800 0 SMALLCONST 0 smallconst /tmp/cgta3wWMl.obj
+__end_of_OpenADC 2998 0 CODE 0 text37 dist/default/production/Pendulo.X.production.obj
+SetDCPWM1@DCycle 64 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__CFG_CP1$OFF 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__size_of___wmul 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__Hreset_vec 4 0 CODE 0 reset_vec dist/default/production/Pendulo.X.production.obj
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production/Pendulo.X.production.obj
+__CFG_CP2$OFF 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__size_of_borrarBufferRx 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__end_of_itoa 2BC6 0 CODE 0 text13 dist/default/production/Pendulo.X.production.obj
+?_calcPID 7A 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__end_of_borrarBufferRx 2B1E 0 CODE 0 text3 dist/default/production/Pendulo.X.production.obj
+__CFG_CP3$OFF 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+?_OpenTimer2 60 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__stringdata 800 0 SMALLCONST 0 smallconst dist/default/production/Pendulo.X.production.obj
+__size_of_atoi 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__accesstop 60 0 ABS 0 - /tmp/cgta3wWMl.obj
+__end_of_SetChanADC 2E1C 0 CODE 0 text35 dist/default/production/Pendulo.X.production.obj
+__size_of___aldiv 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__end_of_accionDeControl 21C8 0 CODE 0 text1 dist/default/production/Pendulo.X.production.obj
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/production/Pendulo.X.production.obj
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/production/Pendulo.X.production.obj
+__CFG_PBADEN$ON 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+intlevel0 0 0 CODE 0 text /tmp/cgta3wWMl.obj
+__end_of_ltoa 2A02 0 CODE 0 text17 dist/default/production/Pendulo.X.production.obj
+intlevel1 0 0 CODE 0 text /tmp/cgta3wWMl.obj
+__size_of_labs 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+i1borrarBufferRx@i 2 0 COMRAM 1 cstackCOMRAM dist/default/production/Pendulo.X.production.obj
+__CFG_WRTB$OFF 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+intlevel2 0 0 CODE 0 text /tmp/cgta3wWMl.obj
+intlevel3 0 0 CODE 0 text /tmp/cgta3wWMl.obj
+calcPID@Kd 8A 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__size_of___lmul 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__CFG_WRTC$OFF 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__end_of_enviarEstadoConsola 1036 0 CODE 0 text12 dist/default/production/Pendulo.X.production.obj
+__size_ofi1_borrarBufferRx 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__end_of_ultoa 20A0 0 CODE 0 text18 dist/default/production/Pendulo.X.production.obj
+__CFG_WRTD$OFF 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__end_of_SetDCPWM1 2C0E 0 CODE 0 text26 dist/default/production/Pendulo.X.production.obj
+__size_of_utoa 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__size_ofi1_reset_integral 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production/Pendulo.X.production.obj
+__LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production/Pendulo.X.production.obj
+__size_of___lwmod 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__pdataCOMRAM 39 0 COMRAM 1 dataCOMRAM dist/default/production/Pendulo.X.production.obj
+__CFG_CPB$OFF 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__end_of_ConfigADC 2CFE 0 CODE 0 text36 dist/default/production/Pendulo.X.production.obj
+i1_comenzarADC 2E74 0 CODE 0 text41 dist/default/production/Pendulo.X.production.obj
+__end_of___wmul 2A64 0 CODE 0 text8 dist/default/production/Pendulo.X.production.obj
+setDUTY@duty 66 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+start_initialization 2780 0 CODE 0 cinit dist/default/production/Pendulo.X.production.obj
+___aldiv@quotient 6B 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+___lldiv@quotient 75 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+calcPID@Ki 86 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+parserRx@dirGiro 7D 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+___lwdiv@quotient 66 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+_borrarBufferRx 2AC4 0 CODE 0 text3 dist/default/production/Pendulo.X.production.obj
+_accionDeControl 20A0 0 CODE 0 text1 dist/default/production/Pendulo.X.production.obj
+__CFG_IESO$OFF 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__size_of_ReadADC 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+controlador@lastError1 31 0 COMRAM 1 bssCOMRAM dist/default/production/Pendulo.X.production.obj
+__end_of_utoa 24C6 0 CODE 0 text14 dist/default/production/Pendulo.X.production.obj
+controlador@lastError2 35 0 COMRAM 1 bssCOMRAM dist/default/production/Pendulo.X.production.obj
+enviarEstadoConsola@dutyPWMlimit 135 0 BANK1 1 cstackBANK1 dist/default/production/Pendulo.X.production.obj
+?_setDUTY 66 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+i1_reset_integral 2D64 0 CODE 0 text40 dist/default/production/Pendulo.X.production.obj
+__initialization 2780 0 CODE 0 cinit dist/default/production/Pendulo.X.production.obj
+?_controlador 100 0 BANK1 1 cstackBANK1 dist/default/production/Pendulo.X.production.obj
+?_setActuador 68 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+___llmod@dividend 60 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__CFG_LPT1OSC$OFF 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+___lwmod@dividend 60 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__CFG_ICPRT$OFF 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__CFG_BOR$OFF 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__activetblptr 2 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+___llmod@counter 69 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+___lmul@product 68 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__size_of_sendStr 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+___wmul@product 64 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+___lwmod@counter 65 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__CFG_WDT$OFF 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+calcPID@Kp 82 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+__size_ofi1_SetChanADC 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__CFG_LVP$OFF 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+__size_of___llmod 0 0 ABS 0 - dist/default/production/Pendulo.X.production.obj
+___aldiv@dividend 60 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+___lldiv@dividend 6C 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+_dutyPWMlimit E9 0 BANK0 1 dataBANK0 dist/default/production/Pendulo.X.production.obj
+controlador@Ki 10C 0 BANK1 1 cstackBANK1 dist/default/production/Pendulo.X.production.obj
+isdigit@c 60 0 BANK0 1 cstackBANK0 dist/default/production/Pendulo.X.production.obj
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta> <class name>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+reset_vec 0 0 0 4 1 CODE
+intcodelo 0 18 18 2C6 1 CODE
+smallconst 0 800 800 70 1 SMALLCONST
+config 0 300000 300000 E 1 CONFIG
+idloc 0 200000 200000 8 1 IDLOC
+cstackCOMRAM 1 1 1 40 1 COMRAM
+cstackBANK0 1 60 60 93 1 BANK0
+cstackBANK1 1 100 100 57 1 BANK1
+text12 0 870 870 2652 1 CODE

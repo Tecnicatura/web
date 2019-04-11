@@ -1,0 +1,24 @@
+{
+  "name": "gserial",
+  "version": "1.0.0",
+  "description": "graph json from serial port",
+  "main": "gserial.js",
+  "dependencies": {
+    "serialport": "*",
+    "socket.io": "*"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hernaneche/graphserial.git"
+  },
+  "author": "Hernan Eche",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hernaneche/graphserial/issues"
+  },
+  "homepage": "https://github.com/hernaneche/graphserial#readme"
+}

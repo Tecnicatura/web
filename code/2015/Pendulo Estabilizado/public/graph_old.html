@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<style>
+table{
+      margin: 10px auto;
+}
+
+table, tr {
+    width:200px;
+    border: 2px solid black;
+    text-align: center;
+}
+svg {
+  font: 12px consolas;
+}
+.line {
+  fill: none;
+  stroke: orange;
+  stroke-width: 3px;
+}
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+</style>
+<body >
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.7/socket.io.min.js"></script>-->
+
+<script>
+    var BOTTOM_DATA=-512;
+    var TOP_DATA=512;
+    var n = 400,    
+    data = d3.range(n);
+var margin = {top: 20, right: 20, bottom: 20, left: 50},
+    width = 1366 - margin.left - margin.right,
+    height = 768 - margin.top - margin.bottom;
+var x = d3.scale.linear()
+    .domain([0, n - 1])
+    .range([0, width]);
+var y = d3.scale.linear()
+    .domain([BOTTOM_DATA, TOP_DATA])
+    .range([height, 0]);
+var line = d3.svg.line()
+    .x(function(d, i) { return x(i); })
+    .y(function(d, i) { return y(d); });
+var svg = d3.select("body").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+svg.append("defs").append("clipPath")
+    .attr("id", "clip")
+  .append("rect")
+    .attr("width", width)
+    .attr("height", height);
+svg.append("g")
+    .attr("class", "x axis")
+    .attr("transform", "translate(0," + y(0) + ")")
+    .call(d3.svg.axis().scale(x).orient("bottom"));
+svg.append("g")
+    .attr("class", "y axis")
+    .call(d3.svg.axis().scale(y).orient("left"));
+var path = svg.append("g")
+    .attr("clip-path", "url(#clip)")
+  .append("path")
+    .datum(data)
+    .attr("class", "line")
+    .attr("d", line);
+	
+
+function isNumeric(n) {
+  return !isNaN(parseFloat(n)) && isFinite(n);
+}
+function inRange(data){
+    
+    return data>BOTTOM_DATA&&data<TOP_DATA;
+}
+
+var lastData=0;
+var index=0;
+
+function insertInTable(key, value){
+    var table =document.getElementById('tabla');
+    var tr = document.createElement('tr');   
+
+    var td1 = document.createElement('td');
+    var td2 = document.createElement('td');
+   
+    var text1 = document.createTextNode(key);
+    var text2 = document.createTextNode(value);
+
+    td1.appendChild(text1);
+    td2.appendChild(text2);
+    tr.appendChild(td1);
+    tr.appendChild(td2);
+
+    table.appendChild(tr);
+}
+
+function tick(datain) {
+  // push a new data point onto the back
+  
+  if(isNumeric(datain) && inRange(datain)){
+    insertInTable(index++,lastData);
+    data.push(datain);    
+     path
+    .attr("d", line)
+    .attr("transform", null)
+    .transition()
+      //.duration(10)//debe ser menor al tiempo que tarda en llegar el dato
+      .ease("linear")
+      .attr("transform", "translate(" + x(-1) + ",0)");
+      //.each("end", tick);
+  // pop the old data point off the front
+  data.shift();
+  }else{
+      console.log("data error:"+datain);      
+  }
+  // redraw the line, and slide it to the left
+ 
+}
+
+//SOCKET IO
+  var socket = io.connect('http://localhost'); //io declarada en socketio.js
+  socket.on('newServerData', function (data) {
+    console.log("rx:"+data);
+	lastData=data;
+        tick(lastData);        
+    //socket.emit('event', dat);
+  });
+
+setInterval(function(){ tick(lastData);}, 10);
+
+</script>
+
+<div style='overflow:hidden;'>
+    <table id="tabla" border="1">
+      <tr>
+	  <thead>
+      <th>indice</th>
+      <th>valor</th>
+	  </thead>
+      </tr>
+	  <tbody>
+	  </tbody>
+    </table>
+</div>
+
+</body>
+</html>
