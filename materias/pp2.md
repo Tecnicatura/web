@@ -36,7 +36,7 @@ Leandro Almiron, Julian Barbona, Alejandro Cárpena, Nahuel Monfrini, Agustin Mo
 ---  
 
 ## 2013 
-### Automatización Mezcladora de Colores. Telecomando Android.
+### Automatización Mezcladora de Colores. Telecomando Android.(/web/#!/materias/proyectos/2013/mezclador_pinturas)
   Martín Ruiz Díaz, Hernán Reinero
   
 ### Rueda de Bicicleta con Display Persistence Of Vision  
